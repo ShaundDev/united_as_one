@@ -1,5 +1,11 @@
 ﻿l_english:
 
+### Pack Artilery Unit
+ pack_artillery:0 "Support Pack Artillery"
+ pack_artillery_desc:0 ""
+ pack_artillery_brigade:0 "Pack Artillery"
+ pack_artillery_brigade_desc:0 ""
+
 ### Pack Artilery Research Upgrade
  pack2:0 "Pack Artillery Upgrade"
  pack2_desc:0 "Upgraded carriage designs allow more rapid deployment of small artillery pieces."

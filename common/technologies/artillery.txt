@@ -882,6 +882,9 @@ technologies = {
 		pack_artillery = {
 			soft_attack = 0.07
 		}
+		pack_artillery_brigade = {
+			soft_attack = 0.07
+		}
 		
 		path = {
 			leads_to_tech = pack3

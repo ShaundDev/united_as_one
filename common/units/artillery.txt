@@ -56,7 +56,7 @@ sub_units = {
 
 		type = {
 			infantry
-			artillery
+			support
 		}
 		
 		group = support

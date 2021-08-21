@@ -68,6 +68,11 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_fake_intel_unit_icon_medium"							texturefile = "gfx/interface/counters/divisions_large/unit_fake_intel_unit_icon.dds" noOfFrames = 2}
 	spriteType = { name = "GFX_unit_pack_artillery_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/support_unit_pack_art_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_pack_artillery_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_pack_art_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_infantry_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_light_infantry.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_garrison_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_garrison.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_semmot_infantry_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_semi_infantry.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_div_hq_icon_medium"										textureFile = "gfx/interface/counters/divisions_large/support_unit_hq.dds" noOfFrames = 2 }
+
 
 	####################################################
 	### Small images for DIVISIONS (On-map-counters) ###

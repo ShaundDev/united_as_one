@@ -473,10 +473,7 @@ guiTypes = {
 				maxHeight = 24
 			}
 		}
-
-#-------------------------
-# Release Nation Button
-		
+	
 		positionType = {
 			# to align them right
 			name = "return_territory_button_pos_for_non_resistance"

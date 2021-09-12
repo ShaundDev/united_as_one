@@ -1,37 +1,45 @@
-﻿capital = 689
-
-#oob = ""
+﻿capital = 550
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 }
 
-set_convoys = 5
+set_convoys = 10
 
 1939.1.1 = {
+	
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
 	complete_national_focus = motorization_effort
 	complete_national_focus = aviation_effort
 	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
+	complete_national_focus = large_navy
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
 	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
 
 		#doctrines
+		air_superiority = 1
 		grand_battle_plan = 1
 		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
 		radio_detection = 1
 		mechanical_computing = 1
+		computing_machine = 1
 
 		#industry
 		basic_machine_tools = 1
@@ -43,6 +51,8 @@ set_convoys = 5
 		dispersed_industry2 = 1
 	}
 }
+
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"
@@ -50,19 +60,8 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 75
-	fascism = 1
-	communism = 1
-	neutrality = 23
+	democratic = 55
+	fascism = 15
+	communism = 5
+	neutrality = 25
 }
-
-#create_country_leader = {
-#	
-#	name = "Jonas Lote"
-#	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-#	expire = "1965.1.1"
-#	ideology = centrism
-#	traits = {
-#		#
-#	}
-#}

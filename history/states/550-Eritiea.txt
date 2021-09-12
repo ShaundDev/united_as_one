@@ -9,7 +9,7 @@ state=
 	history=
 	{
 		owner = ITA
-		add_core_of = ERI
+		add_core_of = IAC
 		victory_points = {
 			12766 1
 		}
@@ -17,7 +17,7 @@ state=
 			infrastructure = 4
 			air_base = 3
 			12766 = {
-				naval_base = 3
+				naval_base = 6
 			}
 		}
 	}

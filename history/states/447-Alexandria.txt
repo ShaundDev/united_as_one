@@ -22,9 +22,12 @@ state={
 				naval_base = 8
 
 			}
+			1071 ={
+				bunker = 1
+			}	
 
 		}
-		add_core_of = EGY
+		add_core_of = BAC
 
 	}
 

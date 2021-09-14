@@ -303,11 +303,6 @@ RAJ = {
 	color_ui = rgb { 226  135  40 }
 }
 
-CRO = {
-	color = rgb { 230  70  180 }
-	color_ui = rgb { 230 255 122 }
-}
-
 PRC = {
 	color = rgb { 245 12 55 }
 	color_ui = rgb { 178 34 60 }
@@ -341,11 +336,6 @@ LEB = {
 SYR = {
 	color = rgb { 100  100  150 }
 	color_ui = rgb { 100  100  150 }
-}
-
-SER = {
-	color = rgb { 160 110 110 }
-	color_ui = rgb { 160 110 110 }
 }
 
 ICE = {
@@ -396,11 +386,6 @@ CAM = {
 MAL = {
 	color = rgb { 197  96  100 }
 	color_ui = rgb { 213  169  121 }
-}
-
-MNT = {
-	color = rgb { 77  90  105 }
-	color_ui = rgb { 77  90  105 }
 }
 
 BLR = {

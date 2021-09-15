@@ -15,7 +15,6 @@ state=
 			}
 		}
 
-		start_resistance = CRO #Yugoslavia shouldn't resist occupation
 	} 
 	provinces={	
 		3943 

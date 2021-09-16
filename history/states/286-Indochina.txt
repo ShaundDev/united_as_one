@@ -6,14 +6,15 @@ state={
 	}
 
 	history={
-		add_core_of = VIN
+		add_core_of = FOC
 		owner = FRA
 		victory_points = {
 			4401 3 
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			industrial_complex = 3
+			arms_factory = 2
 			air_base = 2
 			4401 = {
 				naval_base = 4

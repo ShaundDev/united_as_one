@@ -1,3 +1,7 @@
+--- Mod Start/End Date
+NDefines.NGame.START_DATE = "1935.1.1.12"
+NDefines.NGame.END_DATE = "1946.1.1.1"
+
 --- Division Designer Change
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 5; -- Max width of regiments in division designer.
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_HEIGHT = 3; -- Max height of regiments in division designer.

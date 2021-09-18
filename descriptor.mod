@@ -6,3 +6,4 @@ tags={
 	"Historical"
 }
 supported_version="1.10.*"
+replace_path="events"

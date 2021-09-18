@@ -6,4 +6,7 @@ tags={
 	"Historical"
 }
 supported_version="1.10.*"
+replace_path="history/countries"
+replace_path="history/states"
+replace_path="history/units"
 replace_path="events"

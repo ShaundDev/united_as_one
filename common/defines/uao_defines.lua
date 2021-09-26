@@ -1,5 +1,5 @@
 --- Mod Start/End Date
-NDefines.NGame.START_DATE = "1935.1.1.12"
+NDefines.NGame.START_DATE = "1936.1.1.12"
 NDefines.NGame.END_DATE = "1946.1.1.1"
 
 --- Division Designer Change

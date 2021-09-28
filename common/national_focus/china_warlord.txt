@@ -12,6 +12,10 @@
 				tag = GXC
 				tag = SHX
 				tag = XSM
+				tag = GUD
+				tag = XIK
+				tag = SHD
+				tag = HPC
 			}
 			has_dlc = "Waking the Tiger"
 		}
@@ -906,6 +910,7 @@
 					create_wargoal = {
 						target = ROOT
 						type = puppet_wargoal_focus
+						expire = 0
 					}
 				}
 			}

@@ -1,0 +1,92 @@
+﻿capital = 597
+
+oob = "SHD_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+	early_fighter = 1
+	early_bomber = 1
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Han Fuju"
+	desc = "POLITICS_HAN_FUJU_DESC"
+	picture = "Portrait_Han_Fuju.dds"
+	expire = "1975.7.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+  name = "Han Fuju"
+	desc = "POLITICS_HAN_FUJU_DESC"
+	picture = "Portrait_Han_Fuju.dds"
+	expire = "1970.11.3"
+	ideology = fascism_ideology
+}
+
+create_country_leader = {
+  name = "Han Fuju"
+	desc = "POLITICS_HAN_FUJU_DESC"
+	picture = "Portrait_Han_Fuju.dds"
+	expire = "1970.11.3"
+	ideology = conservatism
+}
+
+create_country_leader = {
+  name = "Han Fuju"
+	desc = "POLITICS_HAN_FUJU_DESC"
+	picture = "Portrait_Han_Fuju.dds"
+	expire = "1970.11.3"
+	ideology = n_socialism_ideology
+}
+
+create_country_leader = {
+  name = "Han Fuju"
+	desc = "POLITICS_HAN_FUJU_DESC"
+	picture = "Portrait_Han_Fuju.dds"
+	expire = "1970.11.3"
+	ideology = marxism
+}
+
+
+create_field_marshal = {
+	name = "Han Fuju"
+	portrait_path = "gfx/leaders/SHD/Portrait_Han_Fuju.dds"
+	traits = { offensive_doctrine }
+	id = 3009
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Sun Tongxuan"
+	portrait_path = "gfx/leaders/SHD/Portrait_shd_Sun_Tongxuan.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+

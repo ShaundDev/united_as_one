@@ -313,6 +313,16 @@ GXC = {
 	color_ui = rgb { 71 113 97 }
 }
 
+GUD = {
+	color = rgb { 36 135 139 }
+	color_ui = rgb { 36 135 139 }
+}
+
+SHD = {
+	color = rgb { 20 139 190 }
+	color_ui = rgb { 20 139 190 }
+}
+
 SHX = {
 	color = rgb { 82  2  15 }
 	color_ui = rgb { 101  30  41 }

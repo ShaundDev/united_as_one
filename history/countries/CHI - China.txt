@@ -77,28 +77,16 @@ set_convoys = 40
 # Warlords
 if = {
 	set_autonomy = {
-		target = GUD
-		autonomous_state = autonomy_clique
-	}
-	set_autonomy = {
 		target = GXC
-		autonomous_state = autonomy_warlord
-	}
-	set_autonomy = {
-		target = SHD
-		autonomous_state = autonomy_clique
+		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
 		target = SHX
-		autonomous_state = autonomy_warlord
-	}
-	set_autonomy = {
-		target = HPC
-		autonomous_state = autonomy_clique
+		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
 		target = YUN
-		autonomous_state = autonomy_warlord
+		autonomous_state = autonomy_integrated_puppet
 	}
 }
 

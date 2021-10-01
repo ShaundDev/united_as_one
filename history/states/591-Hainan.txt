@@ -8,7 +8,6 @@ state={
 		owner = GXC
 		add_core_of = GXC
 		add_core_of = CHI
-		add_core_of = PRC
 		
 		victory_points = {
 			1070 1 
@@ -16,6 +15,7 @@ state={
 		
 		buildings = {
 			infrastructure = 2
+			arms_factory = 1
 			air_base = 1
 			1070 = {
 				naval_base = 2
@@ -28,7 +28,7 @@ state={
 				limit = {
 					NOT = { has_dlc = "Waking the Tiger" }
 				}
-				remove_core_of = GXC
+				remove_core_of = GUD
 				CHI = { transfer_state = PREV }
 			}
 			controller = JAP

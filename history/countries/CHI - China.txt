@@ -74,6 +74,23 @@ save_global_event_target_as = WTT_current_china_leader
 
 set_convoys = 40
 
+# Warlords
+if = {
+	set_autonomy = {
+		target = GXC
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = SHX
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = YUN
+		autonomous_state = autonomy_integrated_puppet
+	}
+}
+
+
 1939.1.1 = {
 
 	add_political_power = 1198

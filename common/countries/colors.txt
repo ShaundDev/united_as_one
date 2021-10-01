@@ -1,24 +1,24 @@
 #reload countrycolors
 
 GER = {
-	color = HSV { 0.1 0.15 0.4 }
-	color_ui = rgb { 138 155 116 }
+	color = rgb { 96 116 103 }
+	color_ui = rgb { 96 116 103 }
 }
 ENG = {
-	color = rgb { 201 56 93 }
-	color_ui = rgb { 255 73 121 }
+	color = rgb { 201 56 55 }
+	color_ui = rgb { 201 56 55 }
 }
 SOV = {
 	color = rgb { 125 13 24 }
-	color_ui = rgb { 163 17 31 }
+	color_ui = rgb { 125 13 24 }
 }
 SWE = {
 	color = rgb { 36 132 247 }
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
-	color = rgb { 57 113 228 }
-	color_ui = rgb { 74 147 255 }
+	color = rgb { 11 7 126 }
+	color_ui = rgb { 11 7 126 }
 }
 LUX = {
 	color = rgb { 65 175 179 }
@@ -58,8 +58,8 @@ SPR = {
 	color_ui = rgb { 255 255 122 }
 }
 ITA = {
-	color = rgb { 67 127 63 }
-	color_ui = rgb { 87 165 82 }
+	color = rgb { 48 108 45 }
+	color_ui = rgb { 48 108 45 }
 }
 ROM = {
 	color = rgb { 215 196 72 }
@@ -138,12 +138,12 @@ BRA = {
 	color_ui = rgb { 99 189 82 }
 }
 CAN = {
-	color = rgb { 233  59  59 }
+	color = rgb { 119 48 39 }
 	color_ui = rgb { 155 62 51 }
 }
 CHI = {
-	color = hsv { 0.18 0.6 0.9 } #255 244 190
-	color_ui = hsv { 0.18 0.3 0.9 }
+	color = rgb { 20 139 190 } #255 244 190
+	color_ui = rgb { 20 139 190 }
 }
 CHL = {
 	color = rgb { 155 101 107 }
@@ -311,6 +311,16 @@ PRC = {
 GXC = {
 	color = rgb { 71 113 97 }
 	color_ui = rgb { 71 113 97 }
+}
+
+GUD = {
+	color = rgb { 36 135 139 }
+	color_ui = rgb { 36 135 139 }
+}
+
+SHD = {
+	color = rgb { 20 139 190 }
+	color_ui = rgb { 20 139 190 }
 }
 
 SHX = {
@@ -631,4 +641,12 @@ WUR = {
 SHL = {
 	color = rgb { 51 51 255 }
 	color_ui = rgb { 51 51 255 }
+}
+XIK = {
+	color = rgb { 84 127 151 }
+	color_ui = rgb { 84 127 151 }
+}
+HPC = {
+	color = rgb { 93 181 227 }
+	color_ui = rgb { 93 181 227 }
 }

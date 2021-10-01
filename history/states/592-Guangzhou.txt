@@ -13,12 +13,11 @@ state={
 		owner = GXC
 		add_core_of = GXC
 		add_core_of = CHI
-		add_core_of = PRC
 		
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
-			industrial_complex = 2
+			industrial_complex = 3
 			air_base = 3
 			1047 = {
 				naval_base = 5
@@ -36,7 +35,7 @@ state={
 				limit = {
 					NOT = { has_dlc = "Waking the Tiger" }
 				}
-				remove_core_of = GXC
+				remove_core_of = GUD
 				CHI = { transfer_state = PREV }
 			}
 			JAP = {

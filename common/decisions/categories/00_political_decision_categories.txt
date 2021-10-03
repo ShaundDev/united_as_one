@@ -1,0 +1,10 @@
+#########################################################################
+#  Political Decision Categories
+#########################################################################
+political_category = {
+	icon = generic_propaganda
+	priority = 100
+	visible = {
+
+	}
+}

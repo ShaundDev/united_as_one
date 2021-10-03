@@ -1,0 +1,157 @@
+economic_category = {
+
+	increase_factory_output = {
+
+	icon = generic_decision
+
+		available = {
+			has_stability > 0.2
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.3
+			consumer_goods_factor = 0.02
+			political_power_gain = -0.1
+		}
+
+		days_remove = 120
+		days_re_enable = 120
+
+		cost = 50
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+		}
+	}
+
+	decrease_factory_output = {
+
+	icon = generic_decision
+
+		available = {
+			has_stability > 0.5
+		}
+
+		visible = {
+			always = yes	
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			production_factory_efficiency_gain_factor = -0.5
+			consumer_goods_factor = -0.04
+			political_power_gain = 0.1
+		}
+
+		days_remove = 120
+		days_re_enable = 120
+
+		cost = 50
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+		}
+	}
+
+	prioritize_machine_tools_for_construction = {
+
+		icon = generic_construction
+
+		available = {
+			has_stability > 0.2
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			production_speed_buildings_factor = 0.1
+			production_factory_efficiency_gain_factor = -0.1
+			industrial_capacity_factory = -0.1
+			industrial_capacity_dockyard = -0.1
+		}
+
+		days_remove = 120
+		days_re_enable = 120
+
+		cost = 50
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+		}
+	}
+
+	prioritize_machine_tools_for_military = {
+
+		icon = ger_military_buildup
+
+		available = {
+			has_stability > 0.2
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			production_speed_buildings_factor = -0.1
+			production_factory_efficiency_gain_factor = 0.01
+			industrial_capacity_factory = 0.1
+			industrial_capacity_dockyard = 0.1
+		}
+
+		days_remove = 120
+		days_re_enable = 120
+
+		cost = 50
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+		}
+	}
+
+}

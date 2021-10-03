@@ -1,0 +1,49 @@
+political_category = {
+
+	war_propaganda = {
+
+		icon = generic_megaphone
+
+		available = {
+			NOT = { has_country_flag = war_propaganda_campaign_running }
+			OR = {
+			threat > 0.4
+			has_war = yes
+			}		
+			has_war_support < 0.9
+		}
+
+		visible = {
+			
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+		days_re_enable = 180
+
+		cost = 50
+
+		modifier = {
+			war_support_weekly = 0.01
+			
+		}
+
+		complete_effect = {
+			set_country_flag = war_propaganda_campaign_running
+		}
+		remove_effect = {
+			clr_country_flag = war_propaganda_campaign_running
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.4
+				has_war = yes
+			}
+		}
+	}
+	
+}

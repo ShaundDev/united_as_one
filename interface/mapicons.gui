@@ -249,14 +249,14 @@ guiTypes = {
 		iconType = {
 			name = "bar_org"
 			spriteType = "GFX_mapicon_bar_org_sprite_naval"
-			position = { x=3 y=20 }
+			position = { x=3 y=0 }
 			alwaystransparent = yes
 			rotation = 1.5708
 		}
 		iconType = {
 			name = "bar_str"
 			spriteType = "GFX_mapicon_bar_str_sprite_naval"
-			position = { x=3 y=24 }
+			position = { x=3 y=4 }
 			alwaystransparent = yes
 			rotation = 1.5708
 		}

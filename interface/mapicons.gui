@@ -9,7 +9,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "unit_counter"
 		position = { x=0 y=0 }
-		size = { width = 58 height = 24 }
+		size = { width = 76 height = 31 }
 		clipping = no
 
 		buttonType = {
@@ -21,21 +21,21 @@ guiTypes = {
 		iconType ={
 			name ="group_marker"
 			spriteType = "GFX_UV_group_marker"
-			position = { x=55 y=2 }
+			position = { x=56 y=2 }
 			alwaystransparent = yes
 		}
 		
 		iconType = {
 			name = "counter_ideology"
 			spriteType = "GFX_onmap_unit_counter_ideology"
-			position = { x=37 y=0 }
+			position = { x=35 y=0 }
 			alwaystransparent = yes
 		}
 		
 		iconType = {
 			name = "counter_overlay"
 			spriteType = "GFX_onmap_unit_counter_overlay"
-			position = { x=3 y=3 }
+			position = { x=4 y=4 }
 			alwaystransparent = yes
 		}	
 		
@@ -49,13 +49,14 @@ guiTypes = {
 		iconType ={
 			name ="type"
 			spriteType = "GFX_tiled_window_transparent"
-			position = { x=3 y=3 }
+			position = { x=-2 y=0 }
 			alwaystransparent = yes
+			scale = 0.5
 		}		
 		
 		instantTextboxType = {
 			name = "count_txt"
-			position = { x=36 y=6 }
+			position = { x=35 y=5 }
 			font = "Main_14"
 			maxWidth = 20
 			maxHeight = 14
@@ -65,14 +66,14 @@ guiTypes = {
 		iconType = {
 			name = "bar_org"
 			spriteType = "GFX_mapicon_unit_bar_org"
-			position = { x=14 y=8 }
+			position = { x=3 y=4 }
 			alwaystransparent = yes
 			rotation = 1.5708
 		}
 		iconType = {
 			name = "bar_str"
 			spriteType = "GFX_mapicon_unit_bar_str"
-			position = { x=14 y=12 }
+			position = { x=3 y=8 }
 			alwaystransparent = yes
 			rotation = 1.5708
 		}
@@ -80,7 +81,7 @@ guiTypes = {
 		iconType = {
 			name = "flag"
 			spriteType = "GFX_mapicon_unit_flag_stripe"
-			position = { x=5 y=15 }
+			position = { x=44 y=20 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -96,19 +97,19 @@ guiTypes = {
 		iconType = {
 			name = "attrition"
 			spriteType = "GFX_unit_attrition"
-			position = { x=-4 y=-1 }
+			position = { x=-3 y=-5 }
 		}
 		
 		iconType = {
 			name = "no_orders"
 			spriteType = "GFX_mapicon_unit_no_orders"
-			position = { x=-10 y=8 }
+			position = { x=-10 y=9 }
 		}
 		
 		iconType = {
 			name = "defending_area"
 			spriteType = "GFX_mapicon_unit_area_defense"
-			position = { x=-13 y=6 }
+			position = { x=66 y=6 }
 		}
 		
 		iconType = {
@@ -120,19 +121,20 @@ guiTypes = {
 		iconType = {
 			name = "low_supply"
 			spriteType = "GFX_mapicon_low_supply"
-			position = { x=-4 y=20 }
+			position = { x=-3 y=22 }
 		}
 		
 		iconType ={
 			name ="onmap_digin_icon"
 			spriteType = "GFX_onmap_digin_icon"
-			position = { x=56 y=8 }
+			position = { x=56 y=9 }
+			scale = 1.5
 		}
 
 		iconType ={
 			name ="onmap_action_icon"
 			spriteType = "GFX_onmap_action_icon"
-			position = { x=54 y=7 }
+			position = { x=56 y=10 }
 		}
 	}
 
@@ -324,7 +326,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "air_wing_counter"
 		position = { x=0 y=0 }
-		size = { width = 58 height = 27 }
+		size = { width = 76 height = 29 }
 
 		buttonType = {
 			name = "count_bg"
@@ -336,7 +338,7 @@ guiTypes = {
 		iconType ={
 			name ="group_marker"
 			spriteType = "GFX_UV_group_marker"
-			position = { x=55 y=2 }
+			position = { x=56 y=2 }
 			alwaystransparent = yes
 		}
 		
@@ -349,8 +351,8 @@ guiTypes = {
 		#
 		iconType = {
 			name = "counter_overlay"
-			spriteType = "GFX_onmap_unit_counter_overlay"
-			position = { x=3 y=3 }
+			spriteType = "GFX_onmap_unit_counter_overlay_air"
+			position = { x=4 y=4 }
 			alwaystransparent = yes
 		}	
 		
@@ -364,16 +366,16 @@ guiTypes = {
 		iconType = {
 			name ="wing_type"
 			spriteType = "GFX_wing_types_map"
-			position = { x=3 y=3 }
+			position = { x=5 y=1 }
 			alwaystransparent = yes
 			frame = 1
 		}		
 		
 		instantTextboxType = {
 			name = "count_txt"
-			position = { x=21 y=6 }
+			position = { x=26 y=4 }
 			font = "Main_14"			
-			maxWidth = 50
+			maxWidth = 40
 			maxHeight = 14
 			format = center	
 			alwaystransparent = yes
@@ -388,7 +390,7 @@ guiTypes = {
 		iconType = {
 			name = "bar_str"
 			spriteType = "GFX_mapicon_unit_bar_str"
-			position = { x=13 y=12 }
+			position = { x=3 y=7 }
 			alwaystransparent = yes
 			rotation = 1.5708
 		}
@@ -396,7 +398,7 @@ guiTypes = {
 		iconType = {
 			name = "flag"
 			spriteType = "GFX_mapicon_unit_flag_stripe"
-			position = { x=4 y=15 }
+			position = { x=44 y=19 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -419,19 +421,21 @@ guiTypes = {
 		iconType = {
 			name = "no_mission"
 			spriteType = "GFX_mapicon_unit_no_orders"
-			position = { x=-10 y=8 }
+			position = { x=-9 y=9 }
+			scale = 0.75
 		}
 
 		iconType = {
 			name = "no_region"
 			spriteType = "GFX_mapicon_unit_invalid_orders"
-			position = { x=-10 y=8 }
+			position = { x=-9 y=9 }
+			scale = 0.75
 		}
 		
 		iconType = {
 			name = "onmap_action_icon"
 			spriteType = "GFX_onmap_air_action_icon"
-			position = { x=54 y=7 }
+			position = { x=56 y=10 }
 			frame = 2
 		}		
 	}
@@ -440,7 +444,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "unit_mapicon"
 		position = { x=0 y=0 }
-		size = { width=58 height=27 }
+		size = { width = 76 height = 31 }
 		clipping = no
 		orientation = upper_left
 		
@@ -448,7 +452,7 @@ guiTypes = {
 			name = "units_box"
 			position = { x = 0 y = 0 }
 			size = { width = 100%% height = 100%% }
-			slotsize = { width = 58 height = 1 }
+			slotsize = { width = 76 height = 1 }
 			format = "UPPER_LEFT"
 		}
 	}
@@ -694,12 +698,12 @@ guiTypes = {
 		name = "air_base_mapicon"
 		#backGround =""
 		position = { x=0 y=0 }
-		size = { width=32 height=32 }
+		size = { width=32 height=30 } #MPU
 		orientation = upper_left
 		buttonType ={
 			name ="bg_btn"
 			quadTextureSprite = "GFX_mapicon_air_base"
-			position = { x=-3 y=-3 }
+			position = { x=0 y=0 } #MPU
 		}
 		
 		buttonType ={
@@ -741,10 +745,10 @@ guiTypes = {
 		
 		gridboxtype = {
 			name = "wings_box"
-			position = { x = -26 y = 35 }
+			position = { x=-27 y=30 } #MPU
 			max_slots_horizontal = 1
 			size = { width = 100%% height = 100%% }
-			slotsize = { width = 58 height = 23 }
+			slotsize = { width = 76 height = 29 } #MPU
 			format = "UPPER_LEFT"
 		}
 	}

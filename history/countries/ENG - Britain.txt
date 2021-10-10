@@ -51,6 +51,13 @@ set_technology = {
 	fuel_refining = 1
 }
 
+add_ideas = {
+		#laws
+		open_society
+		consumer_focus
+		ENG_rearmament_program
+}
+
 if = {
 	limit = {
 		has_dlc = "Battle for the Bosporus"

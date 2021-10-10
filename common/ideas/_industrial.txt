@@ -1,0 +1,27 @@
+ideas = {
+	industrial_law = { 
+		law = yes
+		use_list_view = yes
+
+		consumer_focus = {
+			picture = idea_consumer_focus
+		
+		}
+		
+		mixed_industry = {
+			picture = idea_mixed_industry
+		
+		}
+
+		heavy_industry_focus = {
+			picture = idea_heavy_industry_focus
+		
+		}
+		
+		state_managed_industry = {
+			picture = idea_state_managed_industry
+		
+		}
+
+	}
+}

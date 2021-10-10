@@ -1,0 +1,10 @@
+ENG_focus_rearmament_navy = {
+	if = {
+		limit = { has_idea = ENG_rearmament_program }
+		swap_ideas = {
+			remove_idea = ENG_rearmament_program
+			add_idea = ENG_focus_naval_rearmament
+		}
+	}	
+
+}

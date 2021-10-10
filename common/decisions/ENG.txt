@@ -1,200 +1,8 @@
+#####
+## Begin National ENG_rearmament_program
+## ToDo: Merge into Military category?
+#####
 ENG_rearmament_program = {
-		ENG_militarisation = {
-
-		icon = generic_construction
-
-		priority = 100
-
-		available = {
-			has_army_manpower = { size > 799999 } 
-			has_deployed_air_force_size = {
-			    size > 999
-			    type = fighter
-			}
-			OR = {
-				has_deployed_air_force_size = {
-				    size > 139
-				    type = cas
-				}
-				has_deployed_air_force_size = {
-				    size > 139
-				    type = strategic_bomber
-				}
-				has_deployed_air_force_size = {
-				    size > 549
-				    type = tactical_bomber	
-				}
-			}	
-			OR = {
-				has_equipment = {
-					medium_tank_equipment > 799
-				}
-				has_equipment = {
-					heavy_tank_equipment > 559
-				}
-			}
-			has_equipment = {
-				special_equipment > 899
-			}		
-		}	
-
-#		activation = {
-#			OR = {
-#				has_completed_focus = ENG_embargo_germany
-#				has_completed_focus = ENG_peace_time
-#			}	
-#		}
-
-		days_mission_timeout = 1460
-		is_good = no
-		fire_only_once = yes
-
-		visible = {
-			OR = {
-				has_completed_focus = ENG_embargo_germany
-				has_completed_focus = ENG_peace_time
-			}
-		}
-
-		modifier = {
-		}
-
-		timeout_effect = {
-	
-		}
-
-		complete_effect = {
-			custom_effect_tooltip = ENG_BEF_tt
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = eng_fighter_1939
-						NOT = {
-							has_tech = eng_fighter_1940		
-						}	
-					}
-					add_equipment_to_stockpile = {
-						type = fighter_equipment_1939
-							amount = 400
-							producer = ENG
-					}
-				}
-				if = {
-					limit = {
-						has_tech = eng_fighter_1940
-						NOT = {
-							has_tech = eng_fighter_1939	
-						}
-					}
-					add_equipment_to_stockpile = {
-						type = fighter_equipment_1940
-							amount = 400
-							producer = ENG
-					}	
-				}	
-				if = {
-					limit = {
-						AND = {
-						has_tech = eng_fighter_1940
-						has_tech = eng_fighter_1939	
-						}
-					}
-					add_equipment_to_stockpile = {
-						type = fighter_equipment_1940
-							amount = 400
-							producer = ENG
-					}	
-				}	
-				if = {
-					limit = {
-						has_tech = eng_medium_tank_1938
-						NOT = {
-							has_tech = eng_medium_tank_1940
-							has_tech = eng_heavy_tank_1939
-						}
-					}
-					add_equipment_to_stockpile = {
-						type = medium_tank_equipment_1938
-							amount = 500
-							producer = ENG
-					}
-				}
-				if = {
-					limit = {
-						has_tech = eng_heavy_tank_1939
-						NOT = {
-							has_tech = eng_medium_tank_1940
-							has_tech = eng_medium_tank_1938
-						}
-					}
-					add_equipment_to_stockpile = {
-						type = heavy_tank_equipment_1939
-							amount = 350
-							producer = ENG
-					}
-				}
-				if = {
-					limit = {
-						has_tech = eng_heavy_tank_1939
-						has_tech = eng_medium_tank_1938
-						NOT = {
-							has_tech = eng_medium_tank_1940
-						}
-					}
-					add_equipment_to_stockpile = {
-						type = heavy_tank_equipment_1939
-							amount = 350
-							producer = ENG
-					}
-					add_equipment_to_stockpile = {
-						type = medium_tank_equipment_1938
-							amount = 500
-							producer = ENG
-					}
-				}
-				if = {
-					limit = {
-						has_tech = eng_heavy_tank_1939
-						has_tech = eng_medium_tank_1940
-					}
-					add_equipment_to_stockpile = {
-						type = heavy_tank_equipment_1939
-							amount = 350
-							producer = ENG
-					}
-					add_equipment_to_stockpile = {
-						type = medium_tank_equipment_1940
-							amount = 500
-							producer = ENG
-					}
-				}
-				if = {
-					limit = {
-						has_tech = eng_medium_tank_1940
-						NOT = {
-							has_tech = eng_heavy_tank_1939
-						}
-					}
-					add_equipment_to_stockpile = {
-						type = medium_tank_equipment_1940
-							amount = 500
-							producer = ENG
-					}	
-				}
-				add_equipment_to_stockpile = {
-					type = artillery_equipment
-						amount = 500
-						producer = ENG
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-						amount = 4000
-						producer = ENG
-				}
-			}	
-		}	
-	}
-
 	ENG_smallarmsfocus = {
 		icon = generic_industry
 
@@ -377,21 +185,56 @@ ENG_rearmament_program = {
 		}
 
 		visible = {
-			NOT = {
-				has_war_with = GER 
-			}
+#			NOT = {
+#				has_country_flag = JAP_steel_for_guns
+#			}
 		}
-
 		cost = 50
 		fire_only_once = yes
 		days_remove = -1
-
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
-
 		complete_effect = {
-
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+#			add_idea = ENG_focus_naval_rearmament
+			ENG_focus_rearmament_navy = yes
+#			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+#			JAP_interservice_rivalry_towards_navy = yes
+#			set_country_flag = JAP_steel_for_ships
 		}
 	}
 

@@ -1,0 +1,54 @@
+#######################################################################
+# Industrial Policy and Civil Laws
+#######################################################################
+
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_idea_open_society"
+        texturefile = "gfx/interface/ideas/Laws/idea_open_society.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_limited_restrictions"
+        texturefile = "gfx/interface/ideas/Laws/idea_limited_restrictions.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_legalistic_restrictions"
+        texturefile = "gfx/interface/ideas/Laws/idea_legalistic_restrictions.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_repressive_system"
+        texturefile = "gfx/interface/ideas/Laws/idea_repressive_system.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_totalitarian_regime"
+        texturefile = "gfx/interface/ideas/Laws/idea_totalitarian_regime.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_consumer_focus"
+        texturefile = "gfx/interface/ideas/Laws/idea_consumer_focus.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_mixed_industry"
+        texturefile = "gfx/interface/ideas/Laws/idea_mixed_industry.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_heavy_industry_focus"
+        texturefile = "gfx/interface/ideas/Laws/idea_heavy_industry_focus.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_state_managed_industry"
+        texturefile = "gfx/interface/ideas/Laws/idea_state_managed_industry.dds"
+    }
+
+
+
+}

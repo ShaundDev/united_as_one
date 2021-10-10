@@ -1,0 +1,674 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = germany_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 2475 y = 0 }
+
+	focus = {
+		id = GER_saarland_referendum
+		#icon = GFX_goal_generic_construction
+        #prerequisite = {  }
+        #relative_position_id =
+		x = 14
+		y = 0
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+###########################################
+## German Industry Section
+###########################################
+	focus = {
+		id = GER_appeal_to_german_business
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_saarland_referendum }
+        relative_position_id = GER_saarland_referendum
+		x = 6
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_ig_farben
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_appeal_to_german_business }
+        relative_position_id = GER_appeal_to_german_business
+		x = -2
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_mefo_bills
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_appeal_to_german_business }
+        relative_position_id = GER_appeal_to_german_business
+		x = 0
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_reichtsautbahn
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_appeal_to_german_business }
+        relative_position_id = GER_appeal_to_german_business
+		x = 2
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+## Schacht Plan (Free Market Economy)
+	focus = {
+		id = GER_continue_with_schacht
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_ig_farben }
+        prerequisite = { focus = GER_mefo_bills }
+        prerequisite = { focus = GER_reichtsautbahn }
+        relative_position_id = GER_ig_farben
+		x = -1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_promote_steel_trade
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_continue_with_schacht }
+        relative_position_id = GER_continue_with_schacht
+		x = -1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_build_economic_base
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_continue_with_schacht }
+        relative_position_id = GER_continue_with_schacht
+		x = 1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_control_rearmament_spending
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_promote_steel_trade }
+        relative_position_id = GER_promote_steel_trade
+		x = 0
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_expand_infrastructure
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_build_economic_base }
+        relative_position_id = GER_build_economic_base
+		x = 0
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_review_industrial_policy
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_build_economic_base }
+        relative_position_id = GER_build_economic_base
+		x = 0
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+## Goering (Nationalisation)
+	focus = {
+		id = GER_goering_four_year_plan
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_ig_farben }
+        prerequisite = { focus = GER_mefo_bills }
+        prerequisite = { focus = GER_reichtsautbahn }
+        relative_position_id = GER_reichtsautbahn
+		x = 1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_establish_goering_works
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_goering_four_year_plan }
+        relative_position_id = GER_goering_four_year_plan
+		x = -1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_challenge_private_steel_industry
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_establish_goering_works }
+        relative_position_id = GER_establish_goering_works
+		x = 0
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_kdf_wagens
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_goering_four_year_plan }
+        relative_position_id = GER_goering_four_year_plan
+		x = 1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_rheinmetall_merger
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_kdf_wagens }
+        relative_position_id = GER_kdf_wagens
+		x = 0
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_economic_mobilisation
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_rheinmetall_merger }
+        prerequisite = { focus = GER_challenge_private_steel_industry }
+        relative_position_id = GER_goering_four_year_plan
+		x = 0
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_synethic_works
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_continue_with_schacht focus = GER_goering_four_year_plan }
+        relative_position_id = GER_mefo_bills
+		x = 0
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+###########################################
+## Announce Rearmament
+###########################################
+	focus = {
+		id = GER_announce_rearmament
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_saarland_referendum }
+        relative_position_id = GER_saarland_referendum
+		x = -4
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_nuremberg_laws
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_announce_rearmament }
+        relative_position_id = GER_announce_rearmament
+		x = -2
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_anglo_german_naval_treaty
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_announce_rearmament }
+        relative_position_id = GER_announce_rearmament
+		x = 0
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_renounce_treaty_versailles
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_announce_rearmament }
+        relative_position_id = GER_announce_rearmament
+		x = 2
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_ocupy_rhineland
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_nuremberg_laws }
+        prerequisite = { focus = GER_anglo_german_naval_treaty }
+        prerequisite = { focus = GER_renounce_treaty_versailles }
+        relative_position_id = GER_anglo_german_naval_treaty
+		x = 0
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+###########################################
+## Spanish Civil War Intervention
+###########################################
+	focus = {
+		id = GER_spanish_civil_war_intervention
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_ocupy_rhineland }
+        relative_position_id = GER_ocupy_rhineland
+		x = -2
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+
+###########################################
+## Germany War Path
+###########################################
+	focus = {
+		id = GER_war_path
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_ocupy_rhineland }
+        relative_position_id = GER_ocupy_rhineland
+		x = 0
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_danzig_or_war
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_war_path }
+        relative_position_id = GER_war_path
+		x = 0
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+###########################################
+## Sino-German Cooperation
+###########################################
+	focus = {
+		id = GER_sino_german_agreement
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_ocupy_rhineland }
+        relative_position_id = GER_ocupy_rhineland
+		x = 2
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+
+
+###########################################
+## Military Research
+###########################################
+	focus = {
+		id = GER_establish_the_military
+		##icon = GFX_goal_generic_construction
+        #prerequisite = { focus = GER_ocupy_rhineland }
+        relative_position_id = GER_establish_the_wehrmacht
+		x = 32
+		y = 4
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_luftwaffe
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_establish_the_military }
+        relative_position_id = GER_establish_the_military
+		x = -2
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_army
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_establish_the_military }
+        relative_position_id = GER_establish_the_military
+		x = 0
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = GER_navy
+		##icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_establish_the_military }
+        relative_position_id = GER_establish_the_military
+		x = 2
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+}

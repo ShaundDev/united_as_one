@@ -1,0 +1,174 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = uk_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	default = no  
+	continuous_focus_position = { x = 2600 y = 0 }
+
+###########################################
+## UK industrial Branch
+###########################################
+	focus = {
+		id = ENG_limited_rearmament
+		#icon = GFX_goal_generic_construction
+        #prerequisite = {  }
+        #relative_position_id =
+		x = 1
+		y = 0
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+
+
+
+	focus = {
+		id = ENG_lion_rises
+		#icon = GFX_goal_generic_construction
+        #prerequisite = {  }
+        #relative_position_id =
+		x = 10
+		y = 8
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = ENG_mobilise_commonwealth
+		#icon = GFX_goal_generic_construction
+        prerequisite = { focus = ENG_lion_rises }
+        relative_position_id = ENG_lion_rises
+		x = 0
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+###########################################
+## Steady as She Goes
+###########################################
+	focus = {
+		id = ENG_steady_she_goes
+		#icon = GFX_goal_generic_construction
+        #prerequisite = {  }
+        #relative_position_id =
+		x = 14
+		y = 0
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = ENG_colonial_development
+		#icon = GFX_goal_generic_construction
+        prerequisite = { focus = ENG_steady_she_goes }
+        relative_position_id = ENG_steady_she_goes
+		x = -1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = ENG_dominion_investment
+		#icon = GFX_goal_generic_construction
+        prerequisite = { focus = ENG_colonial_development }
+        relative_position_id = ENG_colonial_development
+		x = -1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = ENG_far_east
+		#icon = GFX_goal_generic_construction
+        prerequisite = { focus = ENG_colonial_development }
+        relative_position_id = ENG_colonial_development
+		x = 1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        
+		completion_reward = {
+
+		}
+		
+	}
+
+
+
+}

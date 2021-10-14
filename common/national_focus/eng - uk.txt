@@ -21,14 +21,114 @@ focus_tree = {
 	continuous_focus_position = { x = 2600 y = 0 }
 
 ###########################################
-## UK industrial Branch
+## Begin Rearmament
 ###########################################
 	focus = {
-		id = ENG_limited_rearmament
-		#icon = GFX_goal_generic_construction
+		id = ENG_focus_crypto_bomb
+		icon = GFX_focus_generic_cryptologic_bomb
+		available = {
+				has_war_with = GER
+				POL = {
+					NOT = { is_in_faction_with = GER } #We assume POL will help vs Germany unless they are allied to them
+				}
+			}
+		
+		bypass = {
+			OR = {
+				AND = {
+					has_war_with = GER
+					POL = {
+							is_in_faction_with = GER # If POL is in GER's faction, no help for us
+						}
+				}
+				AND = {
+					has_war = yes
+					is_in_faction_with = USA
+				}
+				GER = { exists = no }
+			}
+		}
+		
+
+		x = 0
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_dlc = "La Resistance" }
+				}
+				add_tech_bonus = {
+					name = codebreaking_bonus
+					bonus = 1.0
+					uses = 3
+					category = decryption_tech
+					category = computing_tech
+				}
+			}
+			else = {
+				hidden_effect = {
+					set_technology = { lar_decryption_bonus_tech = 1 }
+				}
+				custom_effect_tooltip = lar_decryption_bonus_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = ENG_focus_tizard_mission
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = ENG_focus_crypto_bomb }
+		prerequisite = { focus = radar_focus }
+		relative_position_id = ENG_focus_crypto_bomb
+		x = 0
+		y = 3	
+		available = {				
+			has_government = democratic
+			any_other_country = {
+				has_war_with = ROOT
+				NOT = { has_government = democratic }
+				num_of_factories > 30
+			}
+			NOt = {
+				has_war_with = USA
+			}
+			USA = { 
+				has_government = ROOT
+				has_war = no
+				NOT = {
+					OR = {
+						has_idea = undisturbed_isolation
+						has_idea = isolation
+					}
+				}
+			}
+			
+		} 
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			USA = {
+				#country_event = britain.1
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_focus_limited_rearmament
+		icon = GFX_goal_generic_industry_3
         #prerequisite = {  }
         #relative_position_id =
-		x = 1
+		x = 4
 		y = 0
 		cost = 2
 
@@ -40,19 +140,389 @@ focus_tree = {
 		completion_reward = {
 
 		}
-		
 	}
 
+	focus = {
+		id = ENG_focus_air_defense
+		prerequisite = { focus = ENG_focus_limited_rearmament }
+		available = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR = {
+					threat > 0.05
+					has_war = yes
+					has_idea = ENG_no_further_appeasement_idea
+					NOT = { has_government = democratic }
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				OR = {
+					threat > 0.05
+					has_war = yes
+					NOT = { has_government = democratic }
+				}
+			}
+		}
 
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 
+		icon = GFX_goal_generic_construct_military
+		x = -2
+		y = 1
+		relative_position_id = ENG_focus_limited_rearmament
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+			custom_trigger_tooltip =  {
+				tooltip = air_defense_focus_bypass_tt
+				NOT = {
+					any_owned_state = {
+						free_building_slots = {
+							building = anti_air_building
+							size > 0
+						}
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			air_experience = 25
+			if = {
+				limit = { has_country_flag = air_defense_focus_built_max }
+				custom_effect_tooltip = air_defense_focus_tt			
+			}
+			if = {
+				limit = { NOT = { has_country_flag = air_defense_focus_built_max } }
+				every_state = {
+					limit = { has_state_flag = ENG_air_defense_focus_built_2 }
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			air_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							123 = {
+								free_building_slots = {
+									building = anti_air_building
+									size > 1
+								}
+							}
+							125 = {
+								free_building_slots = {
+									building = anti_air_building
+									size > 1
+								}
+							}
+							127 = {
+								free_building_slots = {
+									building = anti_air_building
+									size > 1
+								}
+							}
+						}
+					}
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = anti_air_building
+								size > 1
+							}
+							OR = {
+								region = 1
+								region = 2
+								region = 3
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = anti_air_building
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = ENG_air_defense_focus_built_2
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = anti_air_building
+							size > 1
+						}			
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = ENG_air_defense_focus_built_2
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							123 = {
+								free_building_slots = {
+									building = anti_air_building
+									size > 1
+								}
+							}
+							125 = {
+								free_building_slots = {
+									building = anti_air_building
+									size > 1
+								}
+							}
+							127 = {
+								free_building_slots = {
+									building = anti_air_building
+									size > 1
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = anti_air_building
+							size > 1
+						}
+						OR = {
+							region = 1
+							region = 2
+							region = 3
+						}
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = ENG_air_defense_focus_built_2
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = anti_air_building
+							size > 1
+						}
+						OR = {
+							region = 1
+							region = 2
+							region = 3
+						}						
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = ENG_air_defense_focus_built_2
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = anti_air_building
+							size > 1
+						}
+						OR = {
+							region = 1
+							region = 2
+							region = 3
+						}						
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = ENG_air_defense_focus_built_2
+				}
+			}			
+			if = {
+				limit = {
+					OR = {
+						123 = {
+							free_building_slots = {
+								building = anti_air_building
+								size > 1
+							}
+						}
+						125 = {
+							free_building_slots = {
+								building = anti_air_building
+								size > 1
+							}
+						}
+						127 = {
+							free_building_slots = {
+								building = anti_air_building
+								size > 1
+							}
+						}
+					}
+				}
+				custom_effect_tooltip = air_defense_focus_tt
+				hidden_effect = {
+					123 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 5
+							instant_build = yes
+						}
+					}
+					125 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 5
+							instant_build = yes
+						}
+					}
+					127 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 5
+							instant_build = yes
+						}
+					}
+					set_country_flag = air_defense_focus_built_max
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_focus_radar
+		prerequisite = { focus = ENG_focus_air_defense }
+		icon = GFX_goal_generic_radar
+		x = 0
+		y = 1
+		relative_position_id = ENG_focus_air_defense
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = radar_focus
+				bonus = 1.0
+				uses = 3
+				category = radar_tech
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_focus_shadow_scheme
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ENG_focus_limited_rearmament }
+		available = {
+			threat > 0.05				
+		}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		x = 2
+		y = 1
+		relative_position_id = ENG_focus_limited_rearmament
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			#add_ideas = ENG_focus_wartime_industry
+			#unlock_decision_tooltip = ENG_expand_shadow_scheme	
+			custom_effect_tooltip = shadow_scheme_focus_tt
+			add_ideas = wartime_industry_focus	
+		}
+	}
+
+	focus = {
+		id = ENG_focus_industrial_focus
+		text = industrial_effort
+		prerequisite = { focus = ENG_focus_shadow_scheme }
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 1
+		relative_position_id = ENG_focus_shadow_scheme
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+		available = {
+							
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_tech_bonus = {
+					name = industrial_bonus
+					bonus = 1.0
+					uses = 2
+					category = industry
+				}
+		}
+	}
+
+    focus = {
+		id = uk_extra_tech_slot
+		text = extra_tech_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = ENG_focus_industrial_focus }
+		x = 0
+		y = 1
+		relative_position_id = ENG_focus_industrial_focus
+		available = {
+				
+		}
+
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
 
 	focus = {
 		id = ENG_lion_rises
 		#icon = GFX_goal_generic_construction
-        #prerequisite = {  }
-        #relative_position_id =
-		x = 10
-		y = 8
+        prerequisite = { focus = ENG_focus_limited_rearmament }
+        relative_position_id = ENG_focus_limited_rearmament
+		x = 0
+		y = 4
 		cost = 2
 
 		ai_will_do = {
@@ -87,14 +557,14 @@ focus_tree = {
 	}
 
 ###########################################
-## Steady as She Goes
+## Reinforce the Empire
 ###########################################
 	focus = {
-		id = ENG_steady_she_goes
+		id = ENG_reinforce_empire
 		#icon = GFX_goal_generic_construction
         #prerequisite = {  }
         #relative_position_id =
-		x = 14
+		x = 18
 		y = 0
 		cost = 2
 
@@ -110,30 +580,118 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_colonial_development
-		#icon = GFX_goal_generic_construction
-        prerequisite = { focus = ENG_steady_she_goes }
-        relative_position_id = ENG_steady_she_goes
+		id = ENG_focus_commonwealth_ties
+		prerequisite = { focus = ENG_reinforce_empire }
+		available = {
+			OR = {
+				any_country = {
+					original_tag = NZL
+					is_in_faction_with = ROOT
+				}
+				any_country = {
+					original_tag = SAF
+					is_in_faction_with = ROOT
+				}
+				any_country = {
+					original_tag = RAJ
+					is_in_faction_with = ROOT
+				}
+				any_country = {
+					original_tag = AST
+					is_in_faction_with = ROOT
+				}
+				any_country = {
+					original_tag = NZL
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+		bypass = {
+			CAN = {
+				exists = no
+			}
+			SAF = {
+				exists = no
+			}
+			RAJ = {
+				exists = no
+			}
+			AST = {
+				exists = no
+			}
+			NZL = {
+				exists = no
+			}
+			NOT = {
+				any_state = {
+					OR = {
+						is_core_of = ENG
+						is_core_of = CAN
+						is_core_of = SAF
+						is_core_of = AST
+						is_core_of = NZL
+						is_core_of = RAJ
+					}
+					NOT = { state = 320 }
+					NOT = { state = 321 }
+					OWNER = {
+						NOT = { tag = ENG }
+					}
+				}
+			}
+		}
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = -1
 		y = 1
-		cost = 2
+		relative_position_id = ENG_reinforce_empire
+		cost = 10
 
-		ai_will_do = {
-			factor = 12
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
-        
+		available_if_capitulated = yes
+
 		completion_reward = {
-
+			random_country = {
+				limit = {
+					original_tag = CAN
+					is_in_faction_with = ROOT
+				}
+				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
+			}
+			random_country = {
+				limit = {
+					original_tag = AST
+					is_in_faction_with = ROOT
+				}
+				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
+			}
+			random_country = {
+				limit = {
+					original_tag = RAJ
+					is_in_faction_with = ROOT
+				}
+				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
+			}
+			random_country = {
+				limit = {
+					original_tag = NZL
+					is_in_faction_with = ROOT
+				}
+				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
+			}
+			random_country = {
+				limit = {
+					original_tag = SAF
+					is_in_faction_with = ROOT
+				}
+				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
+			}
 		}
-		
 	}
 
 	focus = {
 		id = ENG_dominion_investment
 		#icon = GFX_goal_generic_construction
-        prerequisite = { focus = ENG_colonial_development }
-        relative_position_id = ENG_colonial_development
+        prerequisite = { focus = ENG_focus_commonwealth_ties }
+        relative_position_id = ENG_focus_commonwealth_ties
 		x = -1
 		y = 1
 		cost = 2
@@ -152,8 +710,8 @@ focus_tree = {
 	focus = {
 		id = ENG_far_east
 		#icon = GFX_goal_generic_construction
-        prerequisite = { focus = ENG_colonial_development }
-        relative_position_id = ENG_colonial_development
+        prerequisite = { focus = ENG_focus_commonwealth_ties }
+        relative_position_id = ENG_focus_commonwealth_ties
 		x = 1
 		y = 1
 		cost = 2
@@ -169,6 +727,64 @@ focus_tree = {
 		
 	}
 
+	focus = {
+		id = ENG__focus_secure_the_imperial_shipping_routes
+		prerequisite = { focus = ENG_reinforce_empire }
+		icon = GFX_focus_generic_cruiser2
+		x = 3
+		y = 1
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				NOT = { has_dlc = "Man the Guns" }
+			}
+		}
+		relative_position_id = ENG_reinforce_empire
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
 
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_secure_the_imperial_shipping_routes
+				bonus = 1.0
+				uses = 2
+				category = cl_tech
+			}
+			add_ideas = ENG_secure_the_imperial_shipping_routes
+		}
+	}
+
+
+###########################################
+## Steady As She Goes
+###########################################
+	focus = {
+		id = ENG_steady_as_she_go
+		#icon = GFX_goal_generic_construction
+        #prerequisite = {  }
+        #relative_position_id = 
+		x = 12
+		y = 0
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+
+		available {
+			threat > 0.01
+		}
+
+		completion_reward = {
+			
+		}
+		
+	}
 
 }

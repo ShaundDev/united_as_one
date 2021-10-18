@@ -1971,18 +1971,20 @@ guiTypes = {
 				pdx_tooltip = "scout_plane_equipment_1_desc"
 			}			
 			
-			
-			containerWindowType = {
-				name = "tiled_research_bg"
-				position = { x=250 y=807 }
-				size = { width = 1475 height = 350 }
-				clipping = no
-	
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_research_bg"
-				}			
-			}
+#####
+# Orange Box
+#####		
+#			containerWindowType = {
+#				name = "tiled_research_bg"
+#				position = { x=250 y=807 }
+#				size = { width = 1475 height = 350 }
+#				clipping = no
+#	
+#				background = {
+#					name = "Background"
+#					quadTextureSprite ="GFX_tiled_research_bg"
+#				}			
+#			}
 				
 			gridboxtype = {
 				name = "early_fighter_tree"

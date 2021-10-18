@@ -2584,7 +2584,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_ENG_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/ENG_strategic_bomber1.dds"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_strategic_bomber1.dds"
 	}	
 	
 	SpriteType = {

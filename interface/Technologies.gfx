@@ -2509,7 +2509,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_ENG_CAS1_medium"
-		texturefile = "gfx/interface/technologies/ENG_CAS1.dds"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_CAS1.dds"
 	}
 
 	SpriteType = {
@@ -2524,14 +2524,19 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_ENG_early_bomber_medium"
-		texturefile = "gfx/interface/technologies/ENG_early_bomber.dds"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_early_bomber.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_ENG_early_fighter_medium"
 		texturefile = "gfx/interface/technologies/planes/eng/ENG_early_fighter.dds"
 	}	
-	
+
+	SpriteType = {
+		name = "GFX_ENG_cv_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_cv_early_fighter.dds"
+	}	
+
 	SpriteType = {
 		name = "GFX_ENG_fighter1_medium"
 		texturefile = "gfx/interface/technologies/planes/eng/ENG_fighter1.dds"
@@ -2554,17 +2559,22 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_ENG_heavy_fighter1_medium"
-		texturefile = "gfx/interface/technologies/ENG_heavy_fighter1.dds"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_heavy_fighter1.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_ENG_heavy_fighter2_medium"
-		texturefile = "gfx/interface/technologies/ENG_heavy_fighter2.dds"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_heavy_fighter2.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_ENG_heavy_fighter3_medium"
-		texturefile = "gfx/interface/technologies/ENG_heavy_fighter3.dds"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_heavy_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_heavy_fighter4_medium"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_heavy_fighter4.dds"
 	}	
 	
 	SpriteType = {
@@ -2581,7 +2591,17 @@ spriteTypes = {
 		name = "GFX_ENG_naval_bomber3_medium"
 		texturefile = "gfx/interface/technologies/ENG_naval_bomber3.dds"
 	}	
-	
+
+	SpriteType = {
+		name = "GFX_ENG_naval_bomber4_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber3.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ENG_naval_bomber5_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber3.dds"
+	}	
+
 	SpriteType = {
 		name = "GFX_ENG_strategic_bomber1_medium"
 		texturefile = "gfx/interface/technologies/planes/eng/ENG_strategic_bomber1.dds"
@@ -2589,29 +2609,38 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_ENG_strategic_bomber2_medium"
-		texturefile = "gfx/interface/technologies/ENG_strategic_bomber2.dds"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_strategic_bomber2.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_ENG_strategic_bomber3_medium"
-		texturefile = "gfx/interface/technologies/ENG_strategic_bomber3.dds"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_strategic_bomber3.dds"
 	}		
 	
 	SpriteType = {
 		name = "GFX_ENG_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/ENG_tactical_bomber1.dds"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_tactical_bomber1.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_ENG_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/ENG_tactical_bomber2.dds"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_tactical_bomber2.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_ENG_tactical_bomber3_medium"
-		texturefile = "gfx/interface/technologies/ENG_tactical_bomber3.dds"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_tactical_bomber3.dds"
 	}	
 
+	SpriteType = {
+		name = "GFX_ENG_tactical_bomber4_medium"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_tactical_bomber4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_tactical_bomber5_medium"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_tactical_bomber5.dds"
+	}	
 	
 	### ENG tanks ###
 

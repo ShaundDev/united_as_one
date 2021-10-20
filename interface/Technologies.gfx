@@ -2558,6 +2558,11 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
+		name = "GFX_ENG_fighter5_medium"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_fighter5.dds"
+	}	
+
+	SpriteType = {
 		name = "GFX_ENG_heavy_fighter1_medium"
 		texturefile = "gfx/interface/technologies/planes/eng/ENG_heavy_fighter1.dds"
 	}	
@@ -2579,27 +2584,22 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_ENG_naval_bomber1_medium"
-		texturefile = "gfx/interface/technologies/ENG_naval_bomber1.dds"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_naval_bomber1.dds"
 	}	
 		
 	SpriteType = {
 		name = "GFX_ENG_naval_bomber2_medium"
-		texturefile = "gfx/interface/technologies/ENG_naval_bomber2.dds"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_naval_bomber2.dds"
 	}	
 		
 	SpriteType = {
 		name = "GFX_ENG_naval_bomber3_medium"
-		texturefile = "gfx/interface/technologies/ENG_naval_bomber3.dds"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_naval_bomber3.dds"
 	}	
 
 	SpriteType = {
 		name = "GFX_ENG_naval_bomber4_medium"
-		texturefile = "gfx/interface/technologies/ENG_naval_bomber3.dds"
-	}	
-
-	SpriteType = {
-		name = "GFX_ENG_naval_bomber5_medium"
-		texturefile = "gfx/interface/technologies/ENG_naval_bomber3.dds"
+		texturefile = "gfx/interface/technologies/planes/eng/ENG_naval_bomber4.dds"
 	}	
 
 	SpriteType = {

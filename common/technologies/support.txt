@@ -19,6 +19,10 @@ technologies = {
 			support_equipment_1
 		}
 		
+		path = {
+			leads_to_tech = tech_headquarters
+			research_cost_coeff = 1
+		}	
 		
 		path = {
 			leads_to_tech = tech_engineers
@@ -81,7 +85,183 @@ technologies = {
 		}
 	}
 
+	tech_headquarters = {
+
+		enable_subunits = {
+			div_hq
+		}
+		
+		path = {
+			leads_to_tech = tech_headquarters2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = support_folder
+			position = { x = -2 y = @1936 }
+		}
+		
+		categories = {
+			support_tech
+			headquarters_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				factor = 10
+				date > "1940.1.1"
+			}
+		}
+	}
 	
+	tech_headquarters2 = {
+
+		div_hq = {
+			max_organisation = 20
+		}		
+		
+		path = {
+			leads_to_tech = tech_headquarters3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = support_folder
+			position = { x = -2 y = @1939 }
+		}
+		
+		categories = {
+			support_tech
+			headquarters_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 1.2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+		}
+	}
+	
+	tech_headquarters3 = {
+
+		div_hq = {
+			max_organisation = 20
+		}
+
+		path = {
+			leads_to_tech = tech_headquarters4
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = support_folder
+			position = { x = -2 y = @1942 }
+		}
+		
+		categories = {
+			support_tech
+			headquarters_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+		}
+	}
+	
+	tech_headquarters4 = {
+
+		div_hq = {
+			max_organisation = 20
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+		folder = {
+			name = support_folder
+			position = { x = -2 y = @1945 }
+		}
+		
+		categories = {
+			support_tech
+			headquarters_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
+		}
+	}	
+
+
 	tech_engineers = {
 
 		enable_subunits = {

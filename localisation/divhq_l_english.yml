@@ -1,0 +1,15 @@
+﻿l_english:
+
+### Pack Artilery Unit
+ div_hq:0 "Divisional HQ"
+ div_hq_desc:0 ""
+
+### Pack Artilery Research Upgrade
+ tech_headquarters:0 "Divisional HQ I"
+ tech_headquarters_desc:0 "Divisional Headquarters are key to maintaining control and coordination within divisions."
+ tech_headquarters2:0 "Divisional HQ II"
+ tech_headquarters2_desc:0 "Improved Divisional Headquarters ensures better battlefield planning and coordination."
+ tech_headquarters3:0 "Divisional HQ III"
+ tech_headquarters3_desc:0 "Improved Divisional Headquarters ensures better battlefield planning and coordination."
+ tech_headquarters4:0 "Divisional HQ IV"
+ tech_headquarters4_desc:0 "Improved Divisional Headquarters ensures better battlefield planning and coordination."

@@ -140,7 +140,9 @@ technologies = {
 	tech_headquarters2 = {
 
 		div_hq = {
-			max_organisation = 20
+			max_organisation = 15
+			initiative = 0.02
+			default_morale = 0.1
 		}		
 		
 		path = {
@@ -183,7 +185,9 @@ technologies = {
 	tech_headquarters3 = {
 
 		div_hq = {
-			max_organisation = 20
+			max_organisation = 15
+			initiative = 0.02
+			default_morale = 0.1
 		}
 
 		path = {
@@ -226,7 +230,9 @@ technologies = {
 	tech_headquarters4 = {
 
 		div_hq = {
-			max_organisation = 20
+			max_organisation = 15
+			initiative = 0.02
+			default_morale = 0.1
 		}
 
 		research_cost = 1.5

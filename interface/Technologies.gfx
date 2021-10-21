@@ -449,23 +449,23 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
-		name = "GFX_tech_recon4_medium"
-		texturefile = "gfx/interface/technologies/recon4.dds"
+		name = "GFX_tech_headquarters4_medium"
+		texturefile = "gfx/interface/technologies/support/headquarters4.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_tech_recon3_medium"
-		texturefile = "gfx/interface/technologies/recon3.dds"
+		name = "GFX_tech_headquarters3_medium"
+		texturefile = "gfx/interface/technologies/support/headquarters3.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_tech_recon2_medium"
-		texturefile = "gfx/interface/technologies/recon2.dds"
+		name = "GFX_tech_headquarters2_medium"
+		texturefile = "gfx/interface/technologies/support/headquarters2.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_tech_recon_medium"
-		texturefile = "gfx/interface/technologies/recon.dds"
+		name = "GFX_tech_headquarters_medium"
+		texturefile = "gfx/interface/technologies/support/headquarters.dds"
 	}	
 
 	SpriteType = {
@@ -487,7 +487,27 @@ spriteTypes = {
 		name = "GFX_tech_engineers_medium"
 		texturefile = "gfx/interface/technologies/engineers.dds"
 	}		
+
+	SpriteType = {
+		name = "GFX_tech_recon4_medium"
+		texturefile = "gfx/interface/technologies/recon4.dds"
+	}
 	
+	SpriteType = {
+		name = "GFX_tech_recon3_medium"
+		texturefile = "gfx/interface/technologies/recon3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_recon2_medium"
+		texturefile = "gfx/interface/technologies/recon2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_recon_medium"
+		texturefile = "gfx/interface/technologies/recon.dds"
+	}	
+
 	SpriteType = {
 		name = "GFX_support_weapons4_medium"
 		texturefile = "gfx/interface/technologies/support_weapons4.dds"

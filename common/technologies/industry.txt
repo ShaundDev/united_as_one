@@ -78,6 +78,37 @@ technologies = {
 		production_factory_max_efficiency_factor = 0.1
 		
 		path = {
+			leads_to_tech = basic_assembly_line_production 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1939
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 5 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+						
+			modifier = {
+				factor = 10
+				date > "1939.1.1"
+			}
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	basic_assembly_line_production = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		path = {
 			leads_to_tech = assembly_line_production 
 			research_cost_coeff = 1
 		}
@@ -103,7 +134,7 @@ technologies = {
 			industry
 		}
 	}
-	
+
 	assembly_line_production = {
 	
 		production_factory_max_efficiency_factor = 0.1

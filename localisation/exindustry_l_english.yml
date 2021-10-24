@@ -1,0 +1,8 @@
+﻿l_english:
+
+### Extra Industrial Research
+ basic_industry:0 "Industrial Planning"
+ basic_industry_desc:0 "Before building up our industry, planning and coordiation is required."
+
+ basic_assembly_line_production:0 "Basic Assembly Line"
+ basic_assembly_line_production_desc:0 "Basic assembly line will allow us to start developing mass production techniques."

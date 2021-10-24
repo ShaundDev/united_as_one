@@ -10,15 +10,15 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = concentrated_industry 
-			research_cost_coeff = 1
-		}
+#		path = {
+#			leads_to_tech = concentrated_industry 
+#			research_cost_coeff = 1
+#		}
 
-		path = {
-			leads_to_tech = dispersed_industry
-			research_cost_coeff = 1
-		}
+#		path = {
+#			leads_to_tech = dispersed_industry
+#			research_cost_coeff = 1
+#		}
 		
 		research_cost = 1.5
 		start_year = 1936
@@ -87,7 +87,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 5 }
+			position = { x = 0 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -118,7 +118,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -156,11 +156,11 @@ technologies = {
 		
 		
 		research_cost = 2
-		start_year = 1941
+		start_year = 1943
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -183,7 +183,7 @@ technologies = {
 		line_change_production_efficiency_factor = 0.2
 		
 		research_cost = 2.5
-		start_year = 1943
+		start_year = 1944
 		
 		XOR = {
 			streamlined_line
@@ -191,7 +191,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = -1 y = 10 }
+			position = { x = -1 y = 11 }
 		}
 		
 		ai_will_do = {
@@ -214,7 +214,7 @@ technologies = {
 		production_factory_efficiency_gain_factor = 0.1
 			
 		research_cost = 2.5
-		start_year = 1943
+		start_year = 1944
 		
 		XOR = {
 			flexible_line
@@ -222,7 +222,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 1 y = 10 }
+			position = { x = 1 y = 11 }
 		}
 		
 		ai_will_do = {
@@ -313,6 +313,42 @@ technologies = {
 	}
 
 	###############
+	basic_industry = {
+
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		global_building_slots_factor = 0.1
+		
+		path = {
+			leads_to_tech = concentrated_industry 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = dispersed_industry
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 500	
+		}
+		
+		categories = {
+			industry
+		}
+
+		ai_research_weights = {
+			offensive = -1.0
+		}
+	}
+
 	concentrated_industry = {
 
 		industrial_capacity_factory = 0.15
@@ -332,7 +368,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 2 }
+			position = { x = -1 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -400,7 +436,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 4 }
+			position = { x = -1 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -439,7 +475,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 6 }
+			position = { x = -1 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -477,7 +513,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 8 }
+			position = { x = -1 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -510,7 +546,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 10 }
+			position = { x = -1 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -560,7 +596,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 2 }
+			position = { x = 1 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -631,7 +667,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 4 }
+			position = { x = 1 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -672,7 +708,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 6 }
+			position = { x = 1 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -713,7 +749,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 8 }
+			position = { x = 1 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -750,7 +786,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 10 }
+			position = { x = 1 y = 10 }
 		}
 		
 		ai_will_do = {

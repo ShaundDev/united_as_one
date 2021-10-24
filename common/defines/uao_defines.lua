@@ -16,5 +16,9 @@ NDefines.NDiplomacy.LICENSE_ACCEPTANCE_TECH_DIFFERENCE_BASE = 19;
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50;				-- Max slots shared by factories
 NDefines.NBuildings.MAX_BUILDING_LEVELS = 50;			-- Max levels a building can have.
 
+-- Production Efficiency Change
 NDefines.NProduction.BASE_FACTORY_START_EFFICIENCY_FACTOR = 10; -- Base start efficiency for factories expressed in %.
 NDefines.NProduction.BASE_FACTORY_MAX_EFFICIENCY_FACTOR = 30;	-- Base max efficiency for factories expressed in %.
+
+-- Technology Ahead of time research
+NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3;

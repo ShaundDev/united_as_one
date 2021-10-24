@@ -1774,6 +1774,11 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
+		name = "GFX_basic_industry_medium"
+		texturefile = "gfx/interface/technologies/industry/basic_industry.dds"
+	}	
+
+	SpriteType = {
 		name = "GFX_concentrated_industry_medium"
 		texturefile = "gfx/interface/technologies/concentrated_industry.dds"
 	}	

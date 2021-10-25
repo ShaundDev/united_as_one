@@ -1,8 +1,8 @@
 bookmarks = {
 	bookmark = {
-		name = "GATHERING_STORM_NAME"
+		name = "MP Gathering Storm"
 		desc = "GATHERING_STORM_DESC"
-		date = 1936.1.2.1
+		date = 1936.1.1.12
 		picture = "GFX_select_date_1936"
 		default_country = "GER"
 		default = yes

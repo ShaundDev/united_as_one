@@ -20,10 +20,10 @@ technologies = {
 			leads_to_tech = interwar_antiair 
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = interwar_antiair 
-			research_cost_coeff = 1
-		}
+#		path = {
+#			leads_to_tech = interwar_antiair 
+#			research_cost_coeff = 1
+#		}
 		path = {
 			leads_to_tech = interwar_pack
 			research_cost_coeff = 1

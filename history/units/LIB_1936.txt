@@ -1,0 +1,39 @@
+﻿division_template = {
+	name = "Light Infantry"  
+	# Note: all forces at reserve levels in 1936
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+	}
+	
+}
+
+#### OOB ####
+units = {
+	##### Liberian Frontier Force  #####
+	division = {
+		name = "Liberian Frontier Force"
+		location = 7959
+		division_template = "Light Infantry"
+		start_experience_factor = 0.1
+		
+
+	}
+}
+
+
+### LIB had no air force ###
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "LIB"
+		}
+		requested_factories = 1
+		progress = 0.12
+		efficiency = 100
+	}
+}

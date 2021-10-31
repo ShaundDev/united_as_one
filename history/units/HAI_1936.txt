@@ -1,0 +1,36 @@
+﻿division_template = {
+	name = "Brigade de Infanterie"		# Garde d'Haiti was a limited reserve force created in 1934
+	division_names_group = SPAN_INF_02
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+#### OOB ####
+units = {
+
+	
+	division= {	
+		name = "Garde d'Haiti"
+		location = 4641 # Port au Prince
+		division_template = "Brigade de Infanterie"
+		
+
+	}
+
+	
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "HAI"
+		}
+		requested_factories = 1
+		progress = 0.27
+		efficiency = 100
+	}
+}

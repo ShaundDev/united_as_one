@@ -7,6 +7,7 @@ tags={
 }
 replace_path="events"
 replace_path="common/decisions"
+replace_path="common/units"
 replace_path="history/countries"
 replace_path="history/states"
 replace_path="history/units"

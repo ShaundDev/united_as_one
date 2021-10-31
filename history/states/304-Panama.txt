@@ -10,7 +10,6 @@ state={
 	state_category = town
 	
 	history={
-		owner = PAN
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1
@@ -23,12 +22,17 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = PAN
+
 		victory_points = {
 			7630 5 
 		}
 		victory_points = {
 			4611 1
+		}
+
+		1936.1.2 = {
+			add_core_of = PAN
+			owner = PAN
 		}
 
 	}

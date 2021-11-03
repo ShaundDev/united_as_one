@@ -55,8 +55,8 @@ division_template = {
 		artillery_brigade = { x = 3 y = 2 }
 		anti_tank_brigade =  { x = 3 y = 3 }
 		
-		artillery_heavy = { x = 4 y = 0 }
-		anti_air = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 0 }
+		anti_air_brigade = { x = 4 y = 1 }
 	}
 	
 	support = {
@@ -264,7 +264,7 @@ air_wings = {
 	### Royal Canadian Air Force (RCAF)-- New South Wales
 	276 = {
 		# RCAF Station Trenton (ONT) -- Westland Wapitis
-		nav_bomber_equipment_1936 =  {
+		nav_bomber_1 =  {
 			owner = "CAN" 
 			amount = 50
 		}
@@ -329,14 +329,9 @@ instant_effect = { #player
 		}
 
 	add_equipment_to_stockpile = {
-		type = light_tank_equipment_1934
+		type = light_tank_equipment_1
 			amount = 200
 			producer = CAN
 		}
 	
-	add_equipment_to_stockpile = {
-		type = horse_equipment_0
-			amount = 1300
-			producer = CAN
-		}
 }

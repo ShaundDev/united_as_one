@@ -310,7 +310,7 @@ YUG_MTN_01 =
 {
 	name = "Mountain Divisions"
 
-	for_countries = { YUG MNT }
+	for_countries = { YUG }
 
 	can_use = { always = yes }
 

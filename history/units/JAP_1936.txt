@@ -903,13 +903,8 @@ instant_effect = { #player
 			producer = JAP
 		}
 	add_equipment_to_stockpile = {
-		type = light_tank_equipment_1934 
+		type = light_tank_equipment_1
 			amount = 150
-			producer = JAP
-		}
-	add_equipment_to_stockpile = {
-		type = horse_equipment_0
-			amount = 2800
 			producer = JAP
 		}
 	add_equipment_to_stockpile = {
@@ -918,13 +913,8 @@ instant_effect = { #player
 			producer = JAP
 		}
 	add_equipment_to_stockpile = {
-		type = armored_cars_equipment_1
+		type = armored_car1
 			amount  = 150 
 			producer = JAP
     }
-	add_equipment_to_stockpile = {
-		type = armored_cars_equipment_2
-			amount  = 180 
-			producer = JAP
-     }
 }

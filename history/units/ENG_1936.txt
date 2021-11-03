@@ -824,28 +824,28 @@ air_wings = {
 	### RAF Fighter Command ###
 	129 = { 
 		### No. 11 Fighter Command, Middlesex area -- Hawker Demons, Furys, Gloster Gauntlets
-		fighter_equipment_1934 = {
+		fighter_equipment_fighter_equipment_0 = {
 			owner = "ENG" 
 			amount = 190
 		}
 	}
 	130 = { 
 		### No. 11 Fighter Command, Essex area -- Hawker Demons, Furys, Gloster Gauntlets
-		fighter_equipment_1934 = {
+		fighter_equipment_fighter_equipment_0 = {
 			owner = "ENG" 
 			amount = 144
 		}
 	}	
 	127 = { 
 		### No. 12 Fighter Command, Nottingham area -- Hawker Demons, Furys, Gloster Gauntlets
-		fighter_equipment_1934 = {
+		fighter_equipment_fighter_equipment_0 = {
 			owner = "ENG" 
 			amount = 96
 		}
 	}	
 	131 = { 
 		### No. 13 Fighter Command, Newcastle -- Hawker Demons, Furys, Gloster Gauntlets
-		fighter_equipment_1934 = {
+		fighter_equipment_fighter_equipment_0 = {
 			owner = "ENG" 
 			amount = 96
 		}
@@ -855,35 +855,35 @@ air_wings = {
 	### RAF Bomber Command ###
 	125 = { 
 		### No. 1 Bomber Command, East Anglia area -- Fairey Gordons, Battles
-		tac_bomber_equipment_1934 = {
+		tac_bomber_0 = {
 			owner = "ENG" 
 			amount = 64
 		}
 	}
 	125 = { 
 		### No. 2 Bomber Command, East Anglia area -- HP Heyford, Harrows, AW Whitleys
-		tac_bomber_equipment_1934 = {
+		tac_bomber_0 = {
 			owner = "ENG" 
 			amount = 48
 		}
 	}
 	126 = { 
 		### No. 3 Bomber Command, Suffolk area -- HP Heyford, Harrows, AW Whitleys
-		tac_bomber_equipment_1934 = {
+		tac_bomber_0 = {
 			owner = "ENG" 
 			amount = 64
 		}
 	}
 	130 = { 
 		### No. 4 Bomber Command, York area -- HP Heyford, Harrows, AW Whitleys
-		tac_bomber_equipment_1934 = {
+		tac_bomber_0 = {
 			owner = "ENG" 
 			amount = 96
 		}
 	}
 	128 = { 
 		### No. 5 Bomber Command, Lincoln area -- Fairey Gordons, Battles
-		tac_bomber_equipment_1934 = {
+		tac_bomber_0 = {
 			owner = "ENG" 
 			amount = 64
 		}
@@ -892,7 +892,7 @@ air_wings = {
 	### RAF Coastal Command
 	130 = { 
 		### No. 16 Coastal Command -- Vickers Vildebeests
-		nav_bomber_equipment_1936 = {
+		nav_bomber_1 = {
 			owner = "ENG" 
 			amount = 24
 		}
@@ -901,15 +901,15 @@ air_wings = {
 	### RAF Middle East and Africa
 	447 = { 
 		### AHQ Egypt
-		fighter_equipment_1934 = {
+		fighter_equipment_0 = {
 			owner = "ENG" 
 			amount = 96
 		}
-		tac_bomber_equipment_1934 = {
+		tac_bomber_equipment_0 = {
 			owner = "ENG" 
 			amount = 48
 		}
-		tac_bomber_equipment_1934 = {
+		tac_bomber_equipment_0 = {
 			owner = "ENG" 
 			amount = 112
 		}
@@ -918,11 +918,11 @@ air_wings = {
 	### RAF Far East
 	336 = { 
 		### RAF Far East
-		nav_bomber_equipment_1936 = {
+		nav_bomber_equipment_0 = {
 			owner = "ENG" 
 			amount = 24
 		}
-		tac_bomber_equipment_1934 = {
+		tac_bomber_equipment_0 = {
 			owner = "ENG" 
 			amount = 64
 		}

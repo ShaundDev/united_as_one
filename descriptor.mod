@@ -2,6 +2,7 @@ name="United as One"
 replace_path="events"
 replace_path="common/decisions"
 replace_path="common/units"
+replace_path="common/units/technologies"
 replace_path="history/countries"
 replace_path="history/states"
 tags={

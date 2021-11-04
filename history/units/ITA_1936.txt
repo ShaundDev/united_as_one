@@ -738,7 +738,7 @@ instant_effect = { #player
 			producer = ITA
 		}
 	add_equipment_to_stockpile = {
-		type = light_tank_equipment_1934 
+		type = light_tank_equipment_0 
 			amount = 150
 			producer = ITA
 		}
@@ -746,11 +746,6 @@ instant_effect = { #player
 	add_equipment_to_stockpile = {
 		type = armored_cars_equipment_1
 			amount = 200
-			producer = ITA
-		}
-		add_equipment_to_stockpile = {
-		type = horse_equipment_0
-			amount = 1800
 			producer = ITA
 		}
 	}

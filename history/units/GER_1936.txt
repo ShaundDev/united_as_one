@@ -55,17 +55,17 @@ division_template = {
 		motorized = { x = 3 y = 1 }
 		armored_car = { x = 3 y = 2 }
 
-		artillery_brigade_mot = { x = 4 y = 0 }
-		artillery_brigade_mot = { x = 4 y = 1 }
-		anti_tank_brigade_mot =  { x = 4 y = 2 }
-		anti_air_mot =  { x = 4 y = 3 }
+		mot_artillery_brigade = { x = 4 y = 0 }
+		mot_artillery_brigade = { x = 4 y = 1 }
+		mot_anti_tank_brigade =  { x = 4 y = 2 }
+		mot_anti_air_brigade =  { x = 4 y = 3 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
        	recon_ac = { x = 0 y = 1 }
        	engineer = { x = 0 y = 2 }
 		maintenance_company = { x = 1 y = 0 }
-		logistics_company_mot = { x = 1 y = 1 }
+		logistics_company = { x = 1 y = 1 }
 	}
 	priority = 2
 }
@@ -86,16 +86,16 @@ division_template = {
 		motorized = { x = 2 y = 0 }
 		armored_car = { x = 2 y = 1 }
 
-		artillery_brigade_mot = { x = 3 y = 0 }
-		anti_air_mot = { x = 3 y = 1 }
-		anti_tank_brigade_mot =  { x = 3 y = 2 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+		mot_anti_air_brigade = { x = 3 y = 1 }
+		mot_anti_tank_brigade =  { x = 3 y = 2 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
 		mot_recon = { x = 0 y = 2 }
 		maintenance_company = { x = 1 y = 0 }
-		logistics_company_mot = { x = 1 y = 1 }
+		logistics_company = { x = 1 y = 1 }
 	}
 }
 
@@ -129,7 +129,7 @@ division_template = {
 		
         cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
-		artillery_brigade_mot = { x = 2 y = 0 }
+		mot_artillery_brigade = { x = 2 y = 0 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -212,8 +212,8 @@ units = {
 		division_template = "Leichte Panzer-Division"
 		start_experience_factor = 0.7
 		force_equipment_variants = { 
-			light_tank_equipment_1934 = { owner = "GER" }
-			light_tank_equipment_1936 = { owner = "GER" }
+			light_tank_equipment_0 = { owner = "GER" }
+			light_tank_equipment_1 = { owner = "GER" }
 		}
 	}
 	division= {	
@@ -225,8 +225,8 @@ units = {
 		division_template = "Leichte Panzer-Division"
 		start_experience_factor = 0.6
 		force_equipment_variants = { 
-			light_tank_equipment_1934 = { owner = "GER" }
-			light_tank_equipment_1936 = { owner = "GER" }
+			light_tank_equipment_0 = { owner = "GER" }
+			light_tank_equipment_1 = { owner = "GER" }
 		}
 	}
 	division= {	
@@ -238,8 +238,8 @@ units = {
 		division_template = "Leichte Panzer-Division"
 		start_experience_factor = 0.6
 		force_equipment_variants = { 
-			light_tank_equipment_1934 = { owner = "GER" }
-			light_tank_equipment_1936 = { owner = "GER" }
+			light_tank_equipment_0 = { owner = "GER" }
+			light_tank_equipment_1 = { owner = "GER" }
 		}
 	}
 	division= {	
@@ -534,13 +534,13 @@ air_wings = {
 	### I. Luftkreiskommando -- Konigsberg ###
 	763 = { 
 		# Jagdgeschwader 232 - later I./Jagdgeschwader 3
-		fighter_equipment_1934 = {		
+		fighter_equipment_0 = {		
 			owner = "GER" 
 			amount = 100
 		}
 		name="JG 3"
 		# later Sturzkampfgeschwader 76
-		fighter_equipment_1934 = {			
+		fighter_equipment_0 = {			
 			owner = "GER"
 			amount = 80
 		}
@@ -549,7 +549,7 @@ air_wings = {
 	### II. Luftkreiskommando -- Berlin ###
 	64 = { 
 		# Jagdgeschwader 132 'Richtofen' - later Jagdgeschwader 26		
-		fighter_equipment_1936 =  {		
+		fighter_equipment_1 =  {		
 			owner = "GER" 
 			amount = 100
 		}
@@ -592,7 +592,7 @@ air_wings = {
 		}
 		name="KG 4"
 		# Sturzkampfgeschwader 162 - later Sturzkampfgeschwader 2 'Immelmann'	
-		fighter_equipment_1934 =  {			# He 50
+		fighter_equipment_0 =  {			# He 50
 			owner = "GER" 
 			amount = 100
 		}	
@@ -607,7 +607,7 @@ air_wings = {
 	### IV. Luftkreiskommando -- Kassel ###
 	57 = { 
 		# Jagdgeschwader 134 'Horst Wessel' - later Zerstörer-Geschwader 26 'Horst Wessel'	
-		fighter_equipment_1934 =  {		# He 51 B
+		fighter_equipment_0 =  {		# He 51 B
 			owner = "GER" 
 			amount = 100
 		}
@@ -624,7 +624,7 @@ air_wings = {
 	### V. Luftkreiskommando -- Munich ###
 	52 = { 
 		# Jagdgeschwader 136 - later Jagdgeschwader 77 'Herz Ass'
-		fighter_equipment_1934 =  {		# He 51
+		fighter_equipment_0 =  {		# He 51
 			owner = "GER" 
             amount = 100
 		}
@@ -734,7 +734,7 @@ instant_effect = { #player
 	}
 	add_equipment_production = {
 		equipment = {
-			type = light_tank_equipment_1936
+			type = light_tank_equipment_1
 			creator = "GER" 
 		}
 		requested_factories = 3
@@ -763,7 +763,7 @@ instant_effect = { #player
 	
 	add_equipment_production = {
 		equipment = {
-			type = fighter_equipment_1936
+			type = fighter_equipment_1
 			
 			creator = "GER" 
 		}
@@ -846,18 +846,13 @@ instant_effect = { #player
 		}
     
 	add_equipment_to_stockpile = {
-		type = light_tank_equipment_1934
+		type = light_tank_equipment_0
 			amount = 400
 			producer = GER
 		}
 	add_equipment_to_stockpile = {
-		type = light_tank_equipment_1936
+		type = light_tank_equipment_1
 			amount = 250
-			producer = GER
-		}
-		add_equipment_to_stockpile = {
-		type = horse_equipment_0
-			amount = 1200
 			producer = GER
 		}
 		add_equipment_to_stockpile = {

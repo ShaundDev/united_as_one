@@ -7,16 +7,17 @@ state={
 	state_category = rural
 
 	history={
-		owner = ARG
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		add_core_of = ARG
 		victory_points = {
 			8216 1 
 		}
-
+		1936.1.2 = {
+			add_core_of = ARG
+			owner = ARG
+		}
 	}
 
 	provinces={

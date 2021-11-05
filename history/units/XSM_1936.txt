@@ -1,0 +1,105 @@
+﻿division_template = {
+# Represents local militia groups.
+# Main bulk of the Chinese army. Lacked any form of artillery.
+# Circa 1942 had around 9000 men, 3000 rifle strength. (generally poorly-equipped militias)
+	name = "Juntuán"
+	division_names_group = XSM_INF_01
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+		
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 2 y = 1 }
+		light_infantry = { x = 2 y = 2 }	
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}	
+	
+	priority = 1
+}
+division_template = {
+	name = "Qibing Jun"				# Represents two-division cavalry corps (generally poorly-equipped)
+	division_names_group = XSM_CAV_01
+    
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	
+	support = {
+		recon = { x = 0 y = 0 }	
+	}
+}
+
+#### OOB ####
+units = {
+	#Ma Clique units - 15 inf divisions, 6 cav divisions
+	division = {
+		name = "80 Juntuán"
+		location = 12846
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		
+
+	}
+	division = {
+		name = "81 Juntuán"
+		location = 1647
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		
+
+	}
+	division = {
+		name = "82 Juntuán"
+		location = 1933
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		
+
+	}
+	division = {
+		name = "1 Ma Qibing Jun"
+		location = 7911
+		division_template = "Qibing Jun"
+		start_experience_factor = 0.8
+		
+
+	}
+	division = {
+		name = "2 Ma Qibing Jun"
+		location = 531
+		division_template = "Qibing Jun"
+		start_experience_factor = 0.8
+		
+
+	}
+	division = {
+		name = "3 Ma Qibing Jun"
+		location = 12846
+		division_template = "Qibing Jun"
+		start_experience_factor = 0.8
+		
+
+	}
+	division = {
+		name = "Golmud Jingbei"
+		location = 12846
+		division_template = "Juntuán"		# Provincial light_infantry unit (poor equipment and training)
+		
+
+	}
+}

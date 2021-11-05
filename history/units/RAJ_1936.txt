@@ -17,10 +17,8 @@
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
-		artillery_brigade =  { x = 3 y = 3 }
-		artillery_brigade =  { x = 4 y = 0 }
-		
-		anti_air = { x = 4 y = 1 }
+		anti_air_brigade =  { x = 3 y = 3 }
+
 	}
 	
 	support = {
@@ -151,10 +149,8 @@ division_template = {
 			artillery_brigade = { x = 3 y = 0 }
 			artillery_brigade = { x = 3 y = 1 }
 			artillery_brigade = { x = 3 y = 2 }
-			artillery_brigade = { x = 3 y = 3 }	
-			
-			artillery_brigade = { x = 4 y = 0 }
-					
+			anti_air_brigade = { x = 3 y = 3 }	
+							
 			}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }

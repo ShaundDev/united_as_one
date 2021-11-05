@@ -34,22 +34,22 @@ units= {
 			ship = { name = "USS Ranger" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_1 = { amount = 1 owner = USA version_name = "Ranger Class" } } 
 				air_wings = {
 					cv_fighter_equipment_0 =  { owner = "USA" amount = 36 } # historical: 36
-					cv_CAS_equipment_1937 =  { owner = "USA" amount = 12 } # historical: 15
-					cv_nav_bomber_equipment_1936 =  { owner = "USA" amount = 12 } # historical: 12
+					cv_CAS_equipment_1 =  { owner = "USA" amount = 12 } # historical: 15
+					cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 12 } # historical: 12
 				}
 			}
 			ship = { name = "USS Lexington" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = USA version_name = "Lexington Class" } } 
 				air_wings = {
 					cv_fighter_equipment_0 =  { owner = "USA" amount = 16 } # historical: 16
-					cv_CAS_equipment_1937 =  { owner = "USA" amount = 32 } # historical: 30
-					cv_nav_bomber_equipment_1936 =  { owner = "USA" amount = 12 } # historical: 12
+					cv_CAS_equipment_1 =  { owner = "USA" amount = 32 } # historical: 30
+					cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 12 } # historical: 12
 				}
 			}
 			ship = { name = "USS Saratoga" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = USA version_name = "Lexington Class" } } 
 				air_wings = {
 					cv_fighter_equipment_0 =  { owner = "USA" amount = 16 } # historical: 16
-					cv_CAS_equipment_1937 =  { owner = "USA" amount = 32 } # historical: 30
-					cv_nav_bomber_equipment_1936 =  { owner = "USA" amount = 12 } # historical: 12
+					cv_CAS_equipment_1 =  { owner = "USA" amount = 32 } # historical: 30
+					cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 12 } # historical: 12
 				}
 			}
 		}					

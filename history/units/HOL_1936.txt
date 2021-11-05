@@ -137,7 +137,7 @@ air_wings = {
 	# Militaire Luchtvaart van het Koninklijk Nederlands-Indisch Leger (ML-KNIL) -- Celebes
 	# Note: ML-KNIL would increase in size during 1937-40 with USA models:
 	#	Curtis P-36 Hawks (H-75), CW-21 Interceptors, Brewster Buffaloes, Martin B-10s (WH-1--WH-3s)
-
+}
 ### Starting Production ###
 instant_effect = {
 	add_equipment_production = {

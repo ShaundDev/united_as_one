@@ -7,6 +7,7 @@
 		infantry = { x = 0 y = 2 }
 		
 		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 0 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -66,7 +67,7 @@ units = {
 	division = {
 		name = "Light Infantry"
 		location = 9914
-		division_template = "Këmbësori Pjesëtim"
+		division_template = "Garrison"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}

@@ -67,8 +67,8 @@ division_template = {
 
 		cavalry = { x = 2 y = 0 }
 		cavalry = { x = 2 y = 1 }
-		artillery_brigade_mot = { x = 2 y = 2 }
-		artillery_brigade_mot = { x = 2 y = 3 }
+		mot_artillery_brigade = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 2 y = 3 }
 	}
 
 	support = {
@@ -100,8 +100,8 @@ division_template = {
 
 		motorized = { x = 4 y = 0 }
 		motorized = { x = 4 y = 1 }
-		anti_tank_brigade_mot =  { x = 4 y = 2 }
-		anti_air_mot =  { x = 4 y = 3 }
+		mot_anti_tank_brigade =  { x = 4 y = 2 }
+		mot_anti_air_brigade =  { x = 4 y = 3 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }

@@ -72,7 +72,7 @@ division_names_group = BRA_INF_01
 		motorized = { x = 1 y = 2 }
 		motorized = { x = 2 y = 0 }
 		motorized = { x = 2 y = 1 }
-		artillery_brigade_mot = { x = 3 Y = 0 }
+		mot_artillery_brigade = { x = 3 Y = 0 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }

@@ -817,12 +817,12 @@ instant_effect = { #player
 		}
     
 	add_equipment_to_stockpile = {
-		type = light_tank_equipment_0
+		type = light_tank_equipment_1
 			amount = 400
 			producer = GER
 		}
 	add_equipment_to_stockpile = {
-		type = light_tank_equipment_1
+		type = light_tank_equipment_2
 			amount = 250
 			producer = GER
 		}

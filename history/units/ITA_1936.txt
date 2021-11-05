@@ -633,7 +633,7 @@ instant_effect = { #player
 		
 		add_equipment_production = {
 			equipment = {
-				type = light_tank_equipment_1934
+				type = light_tank_equipment_1
 				creator = "ITA" 
 			}
 			requested_factories = 1

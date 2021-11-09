@@ -642,7 +642,7 @@ focus_tree = {
 		id = ENG_focus_air_rearmament
 		prerequisite = { focus = ENG_national_rearmament }
 		icon = GFX_goal_generic_air_doctrine
-		x = -4
+		x = -5
 		y = 1
 		relative_position_id = ENG_national_rearmament
 		cost = 10
@@ -1539,7 +1539,7 @@ focus_tree = {
 		#icon = GFX_goal_generic_construction
         #prerequisite = {  }
         #relative_position_id =
-		x = 30
+		x = 19
 		y = 0
 		cost = 2
 
@@ -2886,8 +2886,8 @@ focus_tree = {
 		#icon = GFX_goal_generic_construction
         #prerequisite = {  }
         #relative_position_id = 
-		x = 17
-		y = 3
+		x = 30
+		y = 0
 		cost = 2
 
 		ai_will_do = {

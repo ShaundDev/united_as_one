@@ -8,6 +8,7 @@ set_war_support = 0.7
 add_ideas = {
 	victor_emmanuel
 	vittoria_mutilata
+	ethopia_crisis
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation

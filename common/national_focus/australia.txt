@@ -2971,7 +2971,6 @@
 	focus = {
 		id = AST_support_the_policy_of_appeasement
 		icon = GFX_goal_generic_improve_relations
-		mutually_exclusive = { focus = AST_never_another_gallipoli }
 		x = 28
 		y = 0
 

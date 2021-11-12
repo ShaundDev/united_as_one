@@ -2553,9 +2553,6 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 10
-
-		mutually_exclusive = { focus = BUL_appoint_right_wing_ministers }
-
 		available = {
 
 		}
@@ -2861,9 +2858,6 @@ focus_tree = {
 		x = 1
 		y = 2
 		cost = 10
-
-		mutually_exclusive = { focus = BUL_depose_the_tsar }
-
 		available = {
 
 		}
@@ -2910,7 +2904,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		mutually_exclusive = { focus = BUL_plot_against_boris }
 
 		available = {
 			neutrality > 0.7
@@ -3414,7 +3407,6 @@ focus = {
 		x = -2
 		y = 0
 		cost = 5
-		mutually_exclusive = { focus = BUL_the_fate_of_the_balkans focus = BUL_join_the_allies }
 
 		bypass = {
 			is_in_faction_with = GER
@@ -3551,7 +3543,6 @@ focus = {
 		x = 0
 		y = 1
 		cost = 10
-		mutually_exclusive = { focus = BUL_total_war }
 
 		bypass = {
 			has_war = yes

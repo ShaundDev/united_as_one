@@ -1,0 +1,11 @@
+################
+##### ENG ######
+################
+
+ENG_rearmament_program = {
+	icon = decision_generic_industry
+	priority = 150
+	allowed = {
+		original_tag = ENG
+	}
+}

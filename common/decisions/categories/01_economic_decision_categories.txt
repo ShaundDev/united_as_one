@@ -1,0 +1,18 @@
+#########################################################################
+#  Economic Decision Categories
+#########################################################################
+economic_category = {
+	icon = generic_economy
+	priority = 95
+	visible = {
+		always = yes
+	}
+
+}
+prospect_resources = {
+	icon = generic_prospect_for_resources
+
+	allowed = {
+		has_dlc = "Waking the Tiger"
+	}
+}

@@ -1,0 +1,11 @@
+#########################################################################
+#  Military Decision Categories
+#########################################################################
+military_category = {
+	icon = generic_economy
+	priority = 95
+	visible = {
+		always = yes
+	}
+
+}

@@ -23,7 +23,6 @@
 		}
 		
 		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = FRA_matignon_agreements }
 		x = 0
 		y = 0
 		cost = 6.43
@@ -537,7 +536,6 @@
 		prerequisite = {
 			focus = FRA_expand_french_citizenship
 		}
-		mutually_exclusive = { focus = FRA_france_undividable }
 		relative_position_id = FRA_expand_french_citizenship
 		cost = 5
 

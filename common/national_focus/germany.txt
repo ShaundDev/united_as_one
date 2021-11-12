@@ -368,8 +368,8 @@ focus_tree = {
 	focus = {
 		id = GER_spanish_civil_war_intervention
 		##icon = GFX_goal_generic_construction
-        prerequisite = { focus = GER_ocupy_rhineland }
-        relative_position_id = GER_ocupy_rhineland
+        prerequisite = { focus = GER_occupy_rhineland }
+        relative_position_id = GER_occupy_rhineland
 		x = -2
 		y = 1
 		cost = 2
@@ -522,8 +522,8 @@ focus_tree = {
 	focus = {
 		id = GER_sino_german_agreement
 		##icon = GFX_goal_generic_construction
-        prerequisite = { focus = GER_ocupy_rhineland }
-        relative_position_id = GER_ocupy_rhineland
+        prerequisite = { focus = GER_occupy_rhineland }
+        relative_position_id = GER_occupy_rhineland
 		x = 2
 		y = 1
 		cost = 2
@@ -547,7 +547,7 @@ focus_tree = {
 	focus = {
 		id = GER_expand_the_wehrmacht
 		##icon = GFX_goal_generic_construction
-        #prerequisite = { focus = GER_ocupy_rhineland }
+        #prerequisite = { focus = GER_occupy_rhineland }
         #relative_position_id = GER_establish_the_wehrmacht
 		x = 26
 		y = 0
@@ -1162,7 +1162,7 @@ focus_tree = {
 		id = GER_plan_z
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = GER_naval_effort }
-		mutually_exclusive = { focus = GER_u_boat_effort focus = GER_rebuild_the_high_seas_fleet focus = GER_accept_british_naval_dominance }
+		mutually_exclusive = { focus = GER_u_boat_effort }
 		x = -1
 		y = 1
 		relative_position_id = GER_naval_effort
@@ -1273,7 +1273,6 @@ focus_tree = {
 	focus = {
 		id = GER_battleship_focus
 		prerequisite = { focus = GER_plan_z }
-		mutually_exclusive = { focus = GER_carrier_focus }
 		icon = GFX_goal_generic_navy_battleship
 		x = -1
 		y = 1

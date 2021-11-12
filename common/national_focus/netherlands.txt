@@ -3339,8 +3339,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_political_power = 120
-			unlock_decision_category_tooltip = HOL_gateway_to_europe_hol_category
-			custom_effect_tooltip = HOL_gateway_to_europe_tt
+			#unlock_decision_category_tooltip = HOL_gateway_to_europe_hol_category
+			#custom_effect_tooltip = HOL_gateway_to_europe_tt
 		}
 	}
 

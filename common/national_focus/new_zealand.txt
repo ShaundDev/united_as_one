@@ -2039,7 +2039,6 @@
 		id = NZL_strengthen_the_commonwealth
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = NZL_the_first_labor_government }
-		mutually_exclusive = { focus = NZL_statute_of_westminster }
 		x = 0
 		y = 1
 		relative_position_id = NZL_the_first_labor_government

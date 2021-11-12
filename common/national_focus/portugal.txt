@@ -2407,7 +2407,6 @@ focus_tree = {
 
 		bypass = {		
 		}
-		prerequisite = { focus = POR_allow_free_elections }
 
 		icon = GFX_focus_generic_treaty
 		x = 2		
@@ -2451,14 +2450,12 @@ focus_tree = {
 
 		bypass = {		
 		}
-		mutually_exclusive = { focus = POR_popular_front}
 		prerequisite = {
 		}
 		icon = GFX_focus_por_estado_novo
 		x = 35
 		y = 0
 
-		relative_position_id = POR_popular_front
 		cost = 10
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}
 		completion_reward = { 	
@@ -2483,7 +2480,6 @@ focus_tree = {
 			has_global_flag = scw_over	
 		}
 		prerequisite = { focus = POR_estado_novo }
-		mutually_exclusive = { focus = POR_strict_neutrality_in_the_spanish_civil_war focus = POR_support_the_spanish_republic focus = POR_a_royal_wedding }
 		icon = GFX_goal_support_fascism
 		x = 0	
 		y = 1
@@ -2719,8 +2715,6 @@ focus_tree = {
 		}
 		prerequisite = { focus = POR_send_assistance}
 
-		mutually_exclusive = { focus = POR_iberian_summit }
-
 		icon = GFX_goal_generic_major_war
 		x = 0	
 		y = 1
@@ -2776,8 +2770,6 @@ focus_tree = {
 		bypass = {	
 		}
 		prerequisite = { focus = POR_portuguese_legion }
-
-		mutually_exclusive = { focus = POR_national_syndicalism }
 
 		icon = GFX_goal_generic_political_pressure
 		x = 4
@@ -2994,8 +2986,6 @@ focus_tree = {
 		
 		prerequisite = { focus = POR_national_gold_reserves }
 		prerequisite = { focus = POR_concordat_with_the_holy_see }
-
-		mutually_exclusive = { focus = POR_honor_anglo_portuguese_alliance }
 
 		icon = GFX_focus_por_salazar
 		x = 1

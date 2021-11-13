@@ -163,6 +163,7 @@ economic_category = {
 		}
 
 		visible = {
+
 			OR = {
 				AND = {
 					has_government = fascism
@@ -174,7 +175,8 @@ economic_category = {
 				}
 				AND = {
 					has_government = democratic
-					threat > 100
+					has_war_support > 0.75
+					#threat > 90
 				}
 			}
 		}

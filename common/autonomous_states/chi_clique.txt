@@ -1,6 +1,6 @@
 autonomy_state = {
 	id = autonomy_clique
-	is_puppet = yes
+	is_puppet = no
 	min_freedom_level = 0.3
 	rule = {
 		can_not_declare_war = no

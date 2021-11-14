@@ -18,7 +18,7 @@ focus_tree = {
 		}
 	}
 	default = no  
-	continuous_focus_position = { x = 1000 y = 0 }
+	continuous_focus_position = { x = 1650 y = 700 }
 
 ###########################################
 ## Begin Rearmament
@@ -125,7 +125,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_focus_limited_rearmament
-		icon = GFX_goal_generic_industry_3
+		icon = GFX_goal_generic_build_tank
         #prerequisite = {  }
         #relative_position_id =
 		x = 4
@@ -138,7 +138,57 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
         
 		completion_reward = {
-
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = ENG_limited_rearmament_focus_2IC
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = ENG_limited_rearmament_focus_2IC
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = ENG_limited_rearmament_focus_2IC
+				}
 		}
 	}
 
@@ -529,7 +579,7 @@ focus_tree = {
 		}
 		complete_tooltip = {
 			every_state = {
-				limit = { has_state_flag = royal_ordinance_focus_2AF }
+				limit = { has_state_flag = bsa_arms_factory_focus_2AF }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -557,7 +607,7 @@ focus_tree = {
 					level = 3
 					instant_build = yes
 				}
-				set_state_flag = royal_ordinance_focus_2AF
+				set_state_flag = bsa_arms_factory_focus_2AF
 			}
 			random_owned_controlled_state = {
 				limit = {
@@ -574,7 +624,7 @@ focus_tree = {
 					level = 3
 					instant_build = yes
 				}
-				set_state_flag = royal_ordinance_focus_2AF
+				set_state_flag = bsa_arms_factory_focus_2AF
 			}
 			random_owned_controlled_state = {
 				limit = {
@@ -591,7 +641,7 @@ focus_tree = {
 					level = 3
 					instant_build = yes
 				}
-				set_state_flag = royal_ordinance_focus_2AF
+				set_state_flag = bsa_arms_factory_focus_2AF
 			}
 			add_ideas = british_arms_discount
 		}
@@ -620,7 +670,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_national_rearmament
-		#icon = GFX_goal_generic_construction
+		icon = GFX_focus_generic_the_giant_wakes
         prerequisite = { focus = ENG_focus_limited_rearmament }
         relative_position_id = ENG_focus_limited_rearmament
 		x = 0
@@ -642,7 +692,7 @@ focus_tree = {
 		id = ENG_focus_air_rearmament
 		prerequisite = { focus = ENG_national_rearmament }
 		icon = GFX_goal_generic_air_doctrine
-		x = -5
+		x = -6
 		y = 1
 		relative_position_id = ENG_national_rearmament
 		cost = 10
@@ -1065,6 +1115,79 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_focus_special_air_service
+		prerequisite = { focus = ENG_focus_royal_ordinance_expand focus = ENG_focus_air_rearmament }
+		available = { 
+			
+		}
+
+		continue_if_invalid = yes
+
+		icon = GFX_focus_eng_special_air_service
+		x = -3
+		y = 1
+		relative_position_id = ENG_focus_royal_ordinance_expand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_ideas = ENG_special_air_service_idea
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = ENG_david_stirling
+		}
+	}
+
+	focus = {
+		id = ENG_motorized_focus
+		prerequisite = { focus = ENG_focus_royal_ordinance_expand }
+		available = { 			
+		}
+		icon = GFX_goal_generic_army_motorized
+		x = 2
+		y = 2
+		relative_position_id = ENG_focus_royal_ordinance_expand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = ENG_tank_focus
+		prerequisite = { focus = ENG_focus_royal_ordinance_expand }
+		icon = GFX_goal_generic_army_tanks
+		x = -2
+		y = 2
+		relative_position_id = ENG_focus_royal_ordinance_expand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
 		id = ENG_focus_royal_ordinance_expand
 		prerequisite = { focus = ENG_national_rearmament }
 		relative_position_id = ENG_national_rearmament
@@ -1135,10 +1258,107 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_sten_gun_research
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ENG_focus_royal_ordinance_expand }
+		x = -1
+		y = 1
+		relative_position_id = ENG_focus_royal_ordinance_expand
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_sten_gun_research
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_artillery_focus
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = ENG_focus_royal_ordinance_expand }
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+        relative_position_id = ENG_focus_royal_ordinance_expand
+
+		available = {
+				
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = ENG_artillery_focus
+				bonus = 1.0
+				uses = 3
+				category = artillery
+			}
+		}			
+	}
+
+	focus = {
+		id = ENG_focus_amphibious_focus
+		prerequisite = { focus = ENG_focus_royal_ordinance_expand focus = ENG_focus_naval_rearmament }
+		available = { 
+			
+		}
+
+		continue_if_invalid = yes
+
+		icon = GFX_goal_generic_amphibious_assault
+		x = 3
+		y = 1
+		relative_position_id = ENG_focus_royal_ordinance_expand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+				add_tech_bonus = {
+					name = uk_amphibious_focus
+					bonus = 1.5
+					uses = 1
+					category = marine_tech
+				}
+				add_tech_bonus = {
+					name = uk_amphibious_focus
+					bonus = 1.5
+					uses = 1
+					category = tp_tech
+				}
+		}
+	}
+
+	focus = {
 		id = ENG_focus_naval_rearmament
 		prerequisite = { focus = ENG_national_rearmament }
 		icon = GFX_goal_generic_construct_naval_dockyard 
-		x = 5
+		x = 6
 		y = 1
 		relative_position_id = ENG_national_rearmament
 		cost = 10
@@ -1578,7 +1798,7 @@ focus_tree = {
 		}
 
 		icon = GFX_goal_generic_construct_civilian
-		x = -6
+		x = -5
 		y = 1
 		relative_position_id = ENG_reinforce_empire
 		cost = 10
@@ -1861,7 +2081,7 @@ focus_tree = {
 			
 		} 
 		icon = GFX_goal_generic_position_armies
-		x = -2
+		x = 2
 		y = 1
 		offset = {
 			x = 2
@@ -1880,6 +2100,60 @@ focus_tree = {
 			navy_experience = 25
 			air_experience = 25
 			add_ideas = ENG_service_overseas_idea
+		}
+	}
+
+	focus = {
+		id = ENG_focus_british_commonwealth_air_training_plan
+		prerequisite = { focus = ENG_focus_service_overseas }
+		icon = GFX_goal_generic_air_fighter2
+		x = 0
+		y = 1
+		relative_position_id = ENG_focus_service_overseas
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {			
+			OR = {
+				CAN = { is_in_faction_with = ENG }
+				SAF = { is_in_faction_with = ENG }
+				RAJ = { is_in_faction_with = ENG }
+				AST = { is_in_faction_with = ENG }
+				NZL = { is_in_faction_with = ENG }
+			}
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = ENG_british_commonwealth_air_training_plan
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+				}
+				add_ideas = ENG_british_commonwealth_air_training_plan
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_colonial_focus 
+		prerequisite = { focus = ENG_reinforce_empire }
+		icon = GFX_focus_research2
+		x = -2
+		y = 1
+		relative_position_id = ENG_reinforce_empire
+		cost = 5
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { ENG_colonial_elite }
 		}
 	}
 
@@ -2654,7 +2928,7 @@ focus_tree = {
 		id = ENG_focus_imperial_shipping_route
 		prerequisite = { focus = ENG_reinforce_empire }
 		icon = GFX_focus_generic_cruiser2
-		x = 3
+		x = 4
 		y = 1
 		offset = {
 			x = -1

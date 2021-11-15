@@ -1358,7 +1358,6 @@ ideas = {
 					limit = {
 						has_dlc = "Man the Guns"
 					}
-					has_completed_focus = USA_america_first
 				}
 			}
 			visible = { has_dlc = "Man the Guns" }
@@ -1388,7 +1387,6 @@ ideas = {
 					limit = {
 						has_dlc = "Man the Guns"
 					}
-					has_completed_focus = USA_america_first
 				}
 			}
 
@@ -1441,7 +1439,6 @@ ideas = {
 					limit = {
 						has_dlc = "Man the Guns"
 					}
-					has_completed_focus = USA_america_first
 					not = { focus_progress = { focus = USA_neutrality_act progress > 0 } }
 					not = { focus_progress = { focus = USA_limited_intervention progress > 0 } }
 				}
@@ -1495,7 +1492,7 @@ ideas = {
 				original_tag = USA
 			}
 			available = {
-				has_completed_focus = USA_empower_the_huac
+
 			}
 			
 			traits = { anti_communist_crusader }
@@ -1708,7 +1705,7 @@ ideas = {
 				original_tag = USA
 			}
 			available = {
-				has_completed_focus = USA_send_lindbergh_to_germany
+
 			}
 
 			visible = {

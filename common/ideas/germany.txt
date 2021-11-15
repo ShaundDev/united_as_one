@@ -1684,14 +1684,7 @@ ideas = {
 			}
 			
 			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-				if = {
-					limit = { has_dlc = "Waking the Tiger" }
-					has_completed_focus = GER_reestablish_free_elections
-				}
+
 			}
 			
 			traits = { democratic_reformer }
@@ -1834,7 +1827,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = GER_oppose_hitler
+
 			}
 			
 			traits = { anti_fascist_agent }
@@ -1853,7 +1846,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = GER_revive_the_kaiserreich
+
 			}
 			
 			traits = { monarchist_media_mogul }
@@ -1872,7 +1865,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = GER_revive_the_kaiserreich
+
 			}
 			
 			traits = { economist }
@@ -1891,7 +1884,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = GER_reestablish_free_elections
+
 			}
 			
 			traits = { connected_citizen }
@@ -1910,7 +1903,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = GER_reestablish_free_elections
+
 			}
 			
 			traits = { liberal_journalist }

@@ -3067,7 +3067,7 @@ focus_tree = {
 ###########################################
 	focus = {
 		id = ENG_steady_as_she_go
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_eng_imperial_federation
         #prerequisite = {  }
         #relative_position_id = 
 		x = 30
@@ -4203,6 +4203,27 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_western_desert_force 
+		prerequisite = { focus = ENG_war_cabinet }
+		icon = GFX_ENG_western_desert_force
+		relative_position_id = ENG_war_cabinet
+		x = -1
+		y = 1
+		cost = 3
+		available = { 
+			ENG = { controls_state = 446 }
+			has_war_with = ITA
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
 		id = ENG_form_the_homeguard
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = {
@@ -4212,10 +4233,6 @@ focus_tree = {
 			OR = {
 				has_war_with = GER
 				has_war_with = ITA
-				has_war_with = FRA
-				has_war_with = SOV
-				has_war_with = JAP
-				has_war_with = USA
 			}
 		}
 		relative_position_id = ENG_the_norway_debate
@@ -4231,9 +4248,6 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.1
 			army_experience = 25
-			ENG = {
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 4500	producer = ENG }
-			}
 			custom_effect_tooltip = ENG_home_guard_tt
 			hidden_effect = {	
 
@@ -4244,13 +4258,13 @@ focus_tree = {
 					priority = 2
 
 					regiments = {
-						garrison = { x = 0 y = 0 }
-						garrison = { x = 0 y = 1 }
-						garrison = { x = 0 y = 2 }
+						light_infantry = { x = 0 y = 0 }
+						light_infantry = { x = 0 y = 1 }
+						light_infantry = { x = 0 y = 2 }
 						
-						garrison = { x = 1 y = 0 }
-						garrison = { x = 1 y = 1 }
-						garrison = { x = 1 y = 2 }
+						light_infantry = { x = 1 y = 0 }
+						light_infantry = { x = 1 y = 1 }
+						light_infantry = { x = 1 y = 2 }
 							
 						light_infantry = { x = 2 y = 0 }
 						light_infantry = { x = 2 y = 1 }

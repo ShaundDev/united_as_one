@@ -573,7 +573,7 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 				option = FREE
 			}
 		}
-		always = yes
+		always = no
 	}
 	if = {
 		limit = {
@@ -582,7 +582,7 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 				option = LIMITED
 			}
 		}
-		always = yes #handled by game logic, see above
+		always = no #handled by game logic, see above
 	}
 	if = {
 		limit = {
@@ -593,7 +593,8 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_LEND_LEASE_SAME_IDEOLOGY_TT
-			has_government = FROM
+			#has_government = FROM
+			always = no
 		}
 	}
 	if = {
@@ -605,7 +606,8 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_LEND_LEASE_SAME_FACTION_TT
-			is_in_faction_with = FROM
+			#is_in_faction_with = FROM
+			always = no
 		}
 	}
 	if = {
